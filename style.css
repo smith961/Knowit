@@ -21,3 +21,25 @@
     background-color: green;
     color: white;
 }
+.login-container{
+    background-color: rgb(245, 187, 80);
+    padding: 3px;
+}
+
+.img-container{
+    background-color: rgb(245, 187, 80);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    
+    
+}
+
+.login-image{
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    
+}
