@@ -81,10 +81,18 @@ border: 2px inset yellow;
 }
 
 .form{
-    margin-top: 3px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    margin: 0 auto;
 }
+    
 .button-form{
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     text-align: center;
     width: 220px;
     height: 60px;
