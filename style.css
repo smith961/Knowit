@@ -82,9 +82,9 @@ border: 2px inset yellow;
 }
 
 .form{
-    margin-top: 20px;
+    margin-top: 3px;
 }
-button{
+.button-form{
     margin: 10px;
     text-align: center;
     width: 220px;
