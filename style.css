@@ -61,8 +61,8 @@ border: 2px solid orangered;
 .section1{
     text-align: center;
     background-color: rgba(255, 255, 0, 0.425);
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     border-radius: 50px;
     border: 2px outset orangered;
 
@@ -80,8 +80,8 @@ border: 2px solid orangered;
     .section2{
     text-align: center;
     background-color:rgba(50, 50, 241, 0.747);
-    padding-top: 150px;
-padding-bottom: 150px;
+    padding-top: 100px;
+padding-bottom: 100px;
 border-radius: 50px;
 border: 2px inset yellow;
 }
@@ -132,8 +132,8 @@ background-color:antiquewhite;
 .section3{
     text-align: center;
     background-color:antiquewhite;
-    padding-top: 150px;
-padding-bottom: 150px;
+    padding-top: 100px;
+padding-bottom: 100px;
 border-radius: 50px;
 border: 2px solid blue;
 }
@@ -190,8 +190,8 @@ background-color:blue;
 .section4{
     text-align: center;
     background-color:rgba(255, 68, 0, 0.753);
-    padding-top: 150px;
-padding-bottom: 150px;
+    padding-top: 100px;
+padding-bottom: 100px;
 border-radius: 50px;
 border: 2px solid antiquewhite;
 }
@@ -234,4 +234,58 @@ background-color:yellow;
     height: 60px;
     width: 270px;
 }
+.section5{
+    background-color: antiquewhite;
+    padding: 100px ;
+    text-align: center;
+    border-radius: 50px;
+border: 2px inset blue;
+padding: 50px 200px;
+}
+.section5 h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+.section5 p{font-weight: 400;
+    font-size: 18px;
 
+}
+
+.a5{
+background-color:  rgba(255, 255, 0, 0.425);
+margin: 50px;
+border: 5px outset blue;
+border-radius: 20px;
+text-align: left;
+padding: 50px 200px;
+}
+.b5{
+    background-color: rgba(36, 36, 243, 0.575);
+    margin: 50px;
+    border: 5px solid yellow;
+    border-radius: 20px;
+    text-align: left;
+    padding: 50px 200px;
+    }
+    .c5{
+        background-color: antiquewhite;
+        margin: 50px;
+        border: 5px inset orangered;
+        border-radius: 20px;
+        text-align: left;
+        padding: 50px 200px;
+        }
+        .c6{
+            background-color: rgba(255, 68, 0, 0.973);
+            margin: 50px;
+            border: 5px outset blue;
+            border-radius: 20px;
+            text-align: left;
+            padding: 50px 200px;
+            }
+           p big{
+           color: blue; 
+           font-weight: 700;
+           }
+        
+    
