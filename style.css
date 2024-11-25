@@ -13,21 +13,36 @@
     
     
 } */
+ .dropdown-menu{
+    background-color: orangered;
+ }
+ #btn:hover{
+    background-color: orangered;
+    border: 2px solid orangered;
+ }
+ #search:hover{
+background-color: orangered;
+border: 2px solid orangered;
+ }
+ #input:hover{
+    background-color: orangered;
+    
+ }
 
 #btn-login{
     border: 3px;
 }
 #btn-login:hover{
-    background-color: green;
+    background-color: orangered;
     color: white;
 }
 .login-container{
-    background-color: rgb(245, 187, 80);
+    background-color: rgba(255, 255, 0, 0.425);
     padding: 3px;
 }
 
 .img-container{
-    background-color: rgb(245, 187, 80);
+    background-color:rgba(255, 255, 0, 0.425);
     display: flex;
     text-align: center;
     align-items: center;
@@ -45,7 +60,7 @@
 }
 .section1{
     text-align: center;
-    background-color:yellow;
+    background-color: rgba(255, 255, 0, 0.425);
     padding-top: 150px;
     padding-bottom: 150px;
     border-radius: 50px;
@@ -53,7 +68,7 @@
 
 }
 .section1 big{
-    color:rgb(17, 17, 134);
+    color:hsl(240, 78%, 34%);
 }
 .section1 h2{
     margin-top: 10px;
@@ -61,9 +76,10 @@
     font-size: 100px;
     color:orangered;
 }
-.section2{
+
+    .section2{
     text-align: center;
-    background-color:blue;
+    background-color:rgba(50, 50, 241, 0.747);
     padding-top: 150px;
 padding-bottom: 150px;
 border-radius: 50px;
@@ -72,23 +88,11 @@ border: 2px inset yellow;
 .section2 h1{
     color:yellow;
     font-size: 200px;
-    font-weight: 500;
-   margin-top: 30px; 
-    
 }
 .section2 p{
     color:yellow;
     font-size: 50px;
     font-weight: 300;
-}
-
-.form{
-    margin-top: 3px;
-}
-.button-form{
-    margin: 25px;
-    text-align: center;
-    
 }
 
 .button1{
@@ -99,6 +103,7 @@ border: 2px inset yellow;
     font-size: 20px;
     height: 60px;
     width: 270px;
+    margin-top: 27px;
 }
 .button2{
     background-color: yellow;
@@ -108,6 +113,7 @@ border: 2px inset yellow;
     font-size: 20px;
     height: 60px;
     width: 270px;
+    margin: 25px;
 }
 .button3{
 background-color:antiquewhite;
@@ -118,3 +124,114 @@ background-color:antiquewhite;
     height: 60px;
     width: 270px;
 }
+.img{
+    background-color: yellow;
+    float: right;
+    width: auto;
+}
+.section3{
+    text-align: center;
+    background-color:antiquewhite;
+    padding-top: 150px;
+padding-bottom: 150px;
+border-radius: 50px;
+border: 2px solid blue;
+}
+.section3 h1{
+    color:blue;
+    font-size: 200px;
+}
+.section3 p{
+    color:blue;
+    font-size: 50px;
+    font-weight: 300;
+}
+/* .form
+{
+    margin-top: 30px;
+} */
+
+/* .but-form{
+    margin: 25px;
+    text-align: center;
+    
+} */
+
+.but1{
+    background-color: orangered;
+    color: blue;
+    border: 10px solid blue;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 60px;
+    width: 270px;
+    margin-top: 27px;
+    
+}
+.but2{
+    background-color: antiquewhite;
+    color: orangered;
+    border: 10px inset antiquewhite;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 60px;
+    width: 270px;
+    margin: 25px;
+}
+.but3{
+background-color:blue;
+    color:antiquewhite;
+    border: 10px outset orangered;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 60px;
+    width: 270px;
+}
+.section4{
+    text-align: center;
+    background-color:rgba(255, 68, 0, 0.753);
+    padding-top: 150px;
+padding-bottom: 150px;
+border-radius: 50px;
+border: 2px solid antiquewhite;
+}
+.section4 h1{
+    color:antiquewhite;
+    font-size: 200px;
+}
+.section4 p{
+    color:antiquewhite;
+    font-size: 50px;
+    font-weight: 300;
+}
+.ton1{
+    background-color: orangered;
+    color: yellow;
+    border: 10px solid yellow;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 60px;
+    width: 270px;
+    margin-top: 27px;
+    
+}
+.ton2{
+    background-color: antiquewhite;
+    color: orangered;
+    border: 10px outset orangered;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 60px;
+    width: 270px;
+    margin: 25px;
+}
+.ton3{
+background-color:yellow;
+    color:orangered;
+    border: 10px inset antiquewhite;
+    border-radius: 30px;
+    font-size: 20px;
+    height: 60px;
+    width: 270px;
+}
+
