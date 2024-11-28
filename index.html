@@ -167,14 +167,117 @@
               <p class="c7">Join the thousands of learnes who trust <big>KNOWIT</big> to help them achieve their goals. Start learning today and unlock
                a world of opportunities</p>
              </div>
-             <script >
-              let img = document.getElementById("imaage");
-              let images = ["assets/landing/developer.png","assets/landing/image.png","assets/landing/landingpage2.png"]
-              setInterval(function (){
-                let rad = Math.floor(Math.random() * images.lenght);
-                img.src = images[rad];
-              },500);
-             </script>
+             <!-- footer -->
+<footer>
+  <!-- newsletter -->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 ml-auto  py-5 newsletter-block">
+          <h3 class="text-white">Subscribe to Our Newsletter Now</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email..." required>
+              <button type="submit" value="send" class="btn  m-2 text-white" id="btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="assets/logo/KNOW IT 3.png" alt="logo" style="width: 150px; height: 50px;"></a>
+          <ul class="list-unstyled">
+            <li class="mb-2">1, Damengoro ICT CENTRE</li>
+            <li class="mb-2">+234 808 760 0329</li>
+            <li class="mb-2">+234 812 410 6198</li>
+            <li class="mb-2">group2@gmail.com</li>
+          </ul>
+        </div>
+        <!-- company -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">COMPANY</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
+            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+            <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
+            <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <!-- links -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">LINKS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="courses.html">Courses</a></li>
+            <li class="mb-3"><a class="text-color" href="event.html">Quizes</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Gallary</a></li>
+            <li class="mb-3"><a class="text-color" href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">SUPPORT</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="#">Social Media Management</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Social Media Marketing</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Search Engine Optimization</a></li>
+            <li class="mb-3"><a class="text-color" href="#">Digital Marketing</a></li>
+          </ul>
+        </div>
+        <!-- support -->
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+          <h4 class="text-white mb-5">RECOMMEND</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a class="text-color" href="register.html">HTML</a></li>
+            <li class="mb-3"><a class="text-color" href="register.html">CSS</a></li>
+            <li class="mb-3"><a class="text-color" href="register.html">JAVASCRIPT</a></li>
+            <li class="mb-3"><a class="text-color" href="register.html">BOOTSTRAP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 
+            © Group 2   <a href="https://themefisher.com">.</a></p>  All Rights Reserved.
+        </div>
+        <div class="col-sm-5 text-sm-right text-center">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/themefisher"><i class="ti-facebook text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.twitter.com/themefisher"><i class="ti-twitter-alt text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://dribbble.com/themefisher"><i class="ti-dribbble text-primary"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+  
+  
+  <script >
+    let img = document.getElementById("imaage");
+    let images = ["assets/landing/developer.png","assets/landing/image.png","assets/landing/landingpage2.png"]
+    setInterval(function (){
+    let rad = Math.floor(Math.random() * images.lenght);
+    img.src = images[rad];
+    },500);
+  </script>
         
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       
