@@ -168,7 +168,9 @@ background-color:antiquewhite;
 #image{
 float: right;
 width: auto;
-animation: change 10s infinite ease-in-out;
+transition: opacity 1s ease-in-out;
+
+
 }
 /* }
 @keyframes image{
