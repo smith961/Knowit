@@ -27,7 +27,7 @@
  #btn:hover{
     background-color: orangered;
     color: antiquewhite;
-    transition: 3s ease-in-out;
+    /* transition: 3s ease-in-out; */
    
  }
  #search{
@@ -324,7 +324,7 @@ box-shadow: 5px 10px blue;
     padding: 50px 200px;
     box-shadow: 5px 10px  yellow;
     }
-    .c5{
+.c5{
         background-color: antiquewhite;
         margin: 50px;
         border:  orangered;
@@ -332,8 +332,8 @@ box-shadow: 5px 10px blue;
         text-align: left;
         padding: 50px 200px;
         box-shadow: 5px 10px orangered;
-        }
-        .c6{
+    }
+.c6{
             background-color: rgba(255, 68, 0, 0.973);
             margin: 50px;
             border:  blue;
@@ -341,10 +341,47 @@ box-shadow: 5px 10px blue;
             text-align: left;
             padding: 50px 200px;
             box-shadow: 5px 10px  blue;
-            }
-           p big{
+    }
+ p big{
            color: blue; 
            font-weight: 700;
-           }
+        }
+footer{
+    background-color: darkgoldenrod;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    
+}
+
+.newsletter .container{
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.newsletter-block{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    left: 15%;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.col-sm-7{
+    text-align: center;
+    position: relative;
+    left: 20%;
+    color: white;
+    
+   
+}
         
     
