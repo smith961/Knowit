@@ -351,6 +351,7 @@ footer{
     border: 2px solid orangered;
     border-radius: 20px;
     margin-top: 10px;
+    color: orangered;
 
     
 }
@@ -381,15 +382,12 @@ footer{
     text-align: center;
     position: relative;
     left: 20%;
-    color: white;
+    color: orangered;
     
    
 }
 .list-unstyled{
     color: orangered;
 }
-.text-white {
-    color: orangered;
-}
-        
+ 
     
