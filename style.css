@@ -347,8 +347,8 @@ box-shadow: 5px 10px blue;
            font-weight: 700;
         }
 footer{
-    background-color: darkgoldenrod;
-    border: 2px solid black;
+    background-color: rgba(248, 248, 21, 0.514);
+    border: 2px solid orangered;
     border-radius: 20px;
     margin-top: 10px;
 
@@ -361,7 +361,7 @@ footer{
 }
 
 .newsletter-block{
-    background-color: green;
+    background-color: rgba(0, 0, 255, 0.836);
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -369,6 +369,8 @@ footer{
     top: 0;
     left: 15%;
     text-align: center;
+   box-shadow: 5px 10px orangered; 
+   margin-bottom: 10px;
     
     
     
@@ -382,6 +384,12 @@ footer{
     color: white;
     
    
+}
+.list-unstyled{
+    color: orangered;
+}
+.text-white {
+    color: orangered;
 }
         
     
