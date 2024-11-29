@@ -31,7 +31,7 @@
    
  }
  #search{
-    border:1px solid orangered;
+    border: 1px solid orangered;
     color: rgba(0, 0, 0, 0.692);
  }
  
@@ -390,7 +390,6 @@ footer{
 .list-unstyled{
     color: orangered;
 }
-<<<<<<< HEAD
 .text-white {
     color: orangered;
 }
@@ -404,12 +403,6 @@ footer{
     border-radius: 10px;
     box-shadow:0 5px 10px orangered;
     margin-top: 100px;
-
-=======
- 
->>>>>>> fb5962a4b0bb60d8545f14eeee40c7f520852f7b
-    
-    
 }
 
 /* Form Container */
@@ -436,22 +429,24 @@ footer{
 }
 
 /* Form Styling */
-form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
 }
 
-input {
+  .input5 {
     margin: 10px 0;
     padding: 10px;
     width: 100%;
     border: 1px solid orangered;
     border-radius: 5px;
+     
+    
 }
 
-button {
+.button5 {
     padding: 10px 20px;
     background: rgba(255, 68, 0, 0.945);
     color: rgba(250, 235, 215, 0.932);
@@ -461,7 +456,7 @@ button {
     margin: 10px 0;
 }
 
-button:hover {
+.button5:hover {
     background: rgba(250, 235, 215, 0.938);
     color: rgba(255, 68, 0, 0.918); 
 }
@@ -474,4 +469,4 @@ a{
 
 a:hover {
     text-decoration: underline;
-}
+}  
