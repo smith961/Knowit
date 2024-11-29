@@ -352,6 +352,7 @@ footer{
     border: 2px solid orangered;
     border-radius: 20px;
     margin-top: 10px;
+    color: orangered;
 
     
 }
@@ -382,13 +383,14 @@ footer{
     text-align: center;
     position: relative;
     left: 20%;
-    color: white;
+    color: orangered;
     
    
 }
 .list-unstyled{
     color: orangered;
 }
+<<<<<<< HEAD
 .text-white {
     color: orangered;
 }
@@ -403,6 +405,9 @@ footer{
     box-shadow:0 5px 10px orangered;
     margin-top: 100px;
 
+=======
+ 
+>>>>>>> fb5962a4b0bb60d8545f14eeee40c7f520852f7b
     
     
 }
