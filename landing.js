@@ -10,3 +10,20 @@ function animateImages(){
  }, 500);
 }
 setInterval(animateImages, 3000);
+
+document.addEventListener("DOMContentLoaded", () => {
+ const loginContainer = document.querySelector(".login-container");
+ const signUpContainer = document.querySelector(".sign-up-container");
+ const showLogin = document.getElementById("showLogin");
+ const showSignUp = document.getElementById("showSignUp");
+
+ showSignUp.addEventListener("click", () => {
+     loginContainer.style.transform = "translateX(-100%)";
+     signUpContainer.style.transform = "translateX(0)";
+ });
+
+ showLogin.addEventListener("click", () => {
+     loginContainer.style.transform = "translateX(0)";
+     signUpContainer.style.transform = "translateX(100%)";
+ });
+});
