@@ -371,7 +371,7 @@ footer{
     top: 0;
     left: 15%;
     text-align: center;
-   box-shadow: 5px 10px orangered; 
+   /* box-shadow: 5px 10px orangered;  */
    margin-bottom: 10px;
     
     
@@ -395,14 +395,16 @@ footer{
 }
 
 /* Container */
-.container {
+.container1 {
     width: 400px;
     height: 500px;
     position: relative;
+    left: 30%;
     overflow: hidden;
     border-radius: 10px;
     box-shadow:0 5px 10px orangered;
-    margin-top: 100px;
+    margin: 100px;
+    
 }
 
 /* Form Container */
