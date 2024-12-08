@@ -91,12 +91,11 @@ transition: 3s ease-in-out;
     background-color: rgba(255, 255, 0, 0.425);
     padding-top: 100px;
     padding-bottom: 100px;
-    border-radius: 50px;
+    border-radius: 10px;
     border: 2px outset orangered;
     margin-top: 60px;
     font-family: Verdana, san-serif;
-    /* clip-path: polygon(0 0,100% 0,100% 80%,50% 100%,0 80%);
- */
+    
 
 }
 .section1 h1{
@@ -107,12 +106,12 @@ transition: 3s ease-in-out;
     font-family: Georgia, serif;
 }
 .section1 h2{
-    margin-top: 20px;
+    padding-top: 10px;
     font-weight: 200;
     font-size: 48px;
     color:orangered;
     text-align: center;
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
     .section2{
@@ -120,7 +119,7 @@ transition: 3s ease-in-out;
     background-color:rgba(50, 50, 241, 0.747);
     padding-top: 100px;
 padding-bottom: 100px;
-border-radius: 50px;
+border-radius: 10px;
 border: 2px inset yellow;
 }
 .section2 h1{
@@ -187,7 +186,7 @@ transition: opacity 1s ease-in-out;
     background-color:antiquewhite;
     padding-top: 100px;
 padding-bottom: 100px;
-border-radius: 50px;
+border-radius: 10px;
 border: 2px solid blue;
 /* display: flex; */
 }
@@ -247,7 +246,7 @@ background-color:blue;
     background-color:rgba(255, 68, 0, 0.753);
     padding-top: 100px;
 padding-bottom: 100px;
-border-radius: 50px;
+border-radius: 10px;
 border: 2px solid antiquewhite;
 }
 .section4 h1{
@@ -295,7 +294,7 @@ background-color:yellow;
     padding: 100px ;
     text-align: center;
     font-family: sans-serif;
-    border-radius: 50px;
+    border-radius: 10px;
 border: 2px inset blue;
 padding: 50px 200px;
 }
@@ -464,14 +463,14 @@ footer{
     color: rgba(255, 68, 0, 0.918); 
 }
 
-p a{
+ p a{
     color: rgba(255, 68, 0, 0.911);
     text-decoration: none;
     font-size: 15px;
 }
 p a:hover {
     text-decoration: underline;
-}
+} 
 .section2 a{
     color: antiquewhite;
     text-decoration: none;

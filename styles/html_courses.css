@@ -1,0 +1,236 @@
+/* General Reset */
+*body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: rgba(250, 235, 215, 0.781);
+}
+ header{
+  background-color: rgba(255, 68, 0, 0.849);
+ }
+ 
+ .logo1{
+  width: auto;
+  height: 40px;
+  margin: 10px 15px;
+  border: 10px ;
+  border: 20px;
+  
+  
+ }
+ .logo2{
+  
+  width: auto;
+  height: 30px;
+  margin: 10px 0px;
+ }
+ nav{
+  display: flex; 
+  align-items: center;
+  height: 50px;
+  padding: 20px 0;
+  }   
+  .but2{
+   width: 100px;
+   height: 30px;
+   margin: 10px 10px;
+   background-color: rgba(255, 166, 0, 0);
+   font-size: 15px;
+   border: 2px rgba(255, 68, 0, 0.788);
+ } 
+ .div1{
+  margin-left: 50%;
+ }
+ a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.986);
+ }
+ a:hover{
+  color: antiquewhite;
+ }
+
+/* Layout */
+
+#container {
+  display: flex;
+  min-height: 100vh;
+}
+
+ #sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+#sidebar ul li a:hover {
+  background-color: rgba(255, 68, 0, 0.87);
+} 
+ 
+#sidebar {
+  width: 25%;
+  background-color: orangered;
+  color: antiquewhite;
+  padding: 20px;
+}
+
+#sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+}
+
+#sidebar li {
+  margin: 10px 0;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#sidebar a:hover {
+  background-color: orangered;
+}
+
+
+
+/* Main content */
+    #main-content {
+  /* margin-left: 10px;  */
+    overflow: auto;
+    width: 100%; 
+    padding: 20px;
+    background-color: rgba(250, 235, 215, 0.438);
+}   
+
+#main-content h2 {
+  font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #main-content h3{
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  #main-content p{
+    margin-bottom: 10px;
+    font-size: 17px;
+    
+  }
+
+.module {
+  display: block;
+}
+
+/* Workspace and Editor */
+#workspace {
+  background-color: rgba(250, 235, 215, 0.068);
+  border: 1px solid orangered;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px orangered;
+}
+
+#editor {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#preview-area {
+  margin-top: 20px;
+}
+
+#preview-frame {
+  width: 100%;
+  height: 300px;
+  border: 1px solid orangered;
+}
+
+/* Navigation buttons */
+#module-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#previous-btn,
+#next-btn {
+  background-color: orangered;
+  color: antiquewhite;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+#preview-btn{
+  background-color: orangered;
+  color: antiquewhite;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+#previous-btn:disabled,
+#next-btn:disabled {
+  background-color: orangered;
+  cursor: not-allowed;
+}
+
+#previous-btn:hover,
+#next-btn:hover {
+  background-color: orangered;
+}
+
+/* Ensure buttons are displayed properly */
+#module-controls {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+/* Navigation buttons */
+#module-controls {
+  position: relative;
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 20px;
+  height: 60px;
+}
+
+#previous-btn,
+#next-btn {
+  background-color: orangered;
+  color: antiquewhite;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+}
+
+#previous-btn {
+  left: 10px; 
+}
+
+#next-btn {
+  right: 10px; 
+}

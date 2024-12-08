@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>HTML Course</title>
+ <link rel="stylesheet" href="../styles/html_courses.css">
+</head>
+<body>
+    <header>
+        <nav>
+         <a href="index.html"><img src="../assets/logo/kNOWIT LOGO.png" alt="this is a logo" class="logo1"></a>
+         <a href="index.html"><img src="../assets/logo/KNOW IT 3.png" alt="logo" class="logo2"></a>
+         <div class="div1">
+         <button class="but2"><a href="../pages/html_course.html">HTML</a></button>
+         <button class="but2"><a href="../pages/css_course.html">CSS</a></button>
+         <button class="but2"><a href="#">JAVASCRIPT</a></button>
+         <a href="../pages/login.html"><button class="but2" type="submit" id="btn-login">Log In</button></a>
+        </div>
+        </nav>
+         </header>
+   <div id="container">
+    <!-- Sidebar for module navigation -->
+    <aside id="sidebar">
+        <ul id="module-list">
+            <li><a href="#" data-module="html-introduction">HTML Introduction</a></li>
+            <li><a href="#" data-module="html-elements">HTML Elements</a></li>
+            <li><a href="#" data-module="html-attributes">HTML Attributes</a></li>
+            <li><a href="#" data-module="html-links">HTML Links</a></li>
+            <li><a href="#" data-module="html-images">HTML Images</a></li>
+            <li><a href="#" data-module="html-headings">HTML Headings</a></li>
+            <li><a href="#" data-module="html-paragraphs">HTML Paragraphs</a></li>
+            <li><a href="#" data-module="html-styles">HTML Styles</a></li>
+            <li><a href="#" data-module="html-formatting">HTML Formatting</a></li>
+            <li><a href="#" data-module="html-quotations">HTML Quotations</a></li>
+            <li><a href="#" data-module="html-colors">HTML Colors</a></li>
+            <li><a href="#" data-module="html-favicons">HTML Favicons</a></li>
+            <li><a href="#" data-module="html-tables">HTML Tables</a></li>
+            <li><a href="#" data-module="html-lists">HTML Lists</a></li>
+            <li><a href="#" data-module="html-forms">HTML Forms</a></li>
+            <li><a href="#" data-module="html-input">HTML Input</a></li>
+            <li><a href="#" data-module="html-semantics">HTML Semantics</a></li>
+            <li><a href="#" data-module="html-responsiveness">HTML Responsiveness</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <section id="module" class="module">
+            <div id="module-content"></div>
+
+            <!-- Workspace for code writing and preview -->
+            <div id="workspace">
+                <h3>Your Workspace</h3>
+                <div id="editor"></div> <!-- Ace editor container -->
+                <button id="preview-btn" onclick="previewCode()">Preview</button>
+
+                <div id="preview-area">
+                    <h3>Live Preview</h3>
+                    <iframe id="preview-frame" sandbox="allow-scripts allow-same-origin"></iframe>
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div id="module-controls">
+                <button id="previous-btn" onclick="navigateModule('previous')">Previous</button>
+                <button id="next-btn" onclick="navigateModule('next')">Next</button>
+            </div>
+        </section>
+    </main>
+</div>
+
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+   <script src="../scripts/html_courses.js"></script>
+</body>
+</html>
