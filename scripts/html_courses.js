@@ -605,7 +605,7 @@ Example:
 &lt/article&gt
 &ltfooter&gt
     &ltp&gt© 2024 My Blog&lt/p&gt
-&lt/footer7gt
+&lt/footer&gt
             </code></pre>
         `,
         exercise: `
