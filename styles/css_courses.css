@@ -1,0 +1,194 @@
+/* General Reset */
+*body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+header{
+  background-color: rgba(255, 68, 0, 0.849);
+ }
+ 
+ .logo1{
+  width: auto;
+  height: 40px;
+  margin: 10px 15px;
+  border: 10px ;
+  border: 20px;
+  
+  
+ }
+ .logo2{
+  
+  width: auto;
+  height: 30px;
+  margin: 10px 0px;
+ }
+ nav{
+  display: flex; 
+  align-items: center;
+  height: 50px;
+  padding: 20px 0;
+  }   
+  .but2{
+   width: 100px;
+   height: 30px;
+   margin: 10px 10px;
+   background-color: rgba(255, 166, 0, 0);
+   font-size: 15px;
+   border: 2px rgba(255, 68, 0, 0.788);
+ } 
+ .div1{
+  margin-left: 50%;
+ }
+ a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.986);
+ }
+ a:hover{
+  color: antiquewhite;
+ }
+
+/* Container Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background-color: orangered;
+  color: antiquewhite;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: orangered;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.main-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+.main-content h3{
+  padding: 10px 0;
+  font-size: 20px;
+}
+.main-content p{
+  margin-bottom: 10px;
+  font-size: 17px;
+  
+}
+.main-content li{
+  font-size: 17px;
+  
+}
+
+.workspace h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid orangered;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button#runBtn {
+  background-color: orangered;
+  color: antiquewhite;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button#runBtn:hover {
+  background-color: orangered;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  background-color: orangered;
+  color: antiquewhite;
+}
+
+.nav-btn:disabled {
+  background-color: orangered;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background-color: orangered;
+}
+
+/* Output */
+#output {
+  background-color: rgba(250, 235, 215, 0.212);
+  padding: 10px;
+  border: 1px solid orangered;
+  border-radius: 4px;
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.testBox {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid orangered;
+}
+
+.testText {
+  font-size: 16px;
+}
