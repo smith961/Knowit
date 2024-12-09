@@ -1,236 +1,209 @@
-/* General Reset */
-*body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  background-color: rgba(250, 235, 215, 0.781);
+/* General reset */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
- header{
-  background-color: rgba(255, 68, 0, 0.849);
- }
+
+/* Body and layout */
+body {
+ font-family: Arial, sans-serif;
+ background-color: antiquewhite;
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ overflow: hidden; 
+}
+
+/* Header */
+header {
+ background-color: orangered;
+ color: black;
+ padding: 15px;
+ text-align: center;
+ font-size: 20px; 
+ position: sticky;
+ top: 0;
+ z-index: 1000; 
+}
+
  
- .logo1{
-  width: auto;
-  height: 40px;
-  margin: 10px 15px;
-  border: 10px ;
-  border: 20px;
-  
-  
- }
- .logo2{
-  
-  width: auto;
+.logo1{
+ width: auto;
+ height: 40px;
+ margin: 10px 15px;
+ border: 10px ;
+ border: 20px;
+ 
+ 
+}
+.logo2{
+ 
+ width: auto;
+ height: 30px;
+ margin: 10px 0px;
+}
+nav{
+ display: flex; 
+ align-items: center;
+ height: 30px;
+ padding: 20px 0;
+ }   
+ .but2{
+  width: 100px;
   height: 30px;
-  margin: 10px 0px;
- }
- nav{
-  display: flex; 
-  align-items: center;
-  height: 50px;
-  padding: 20px 0;
-  }   
-  .but2{
-   width: 100px;
-   height: 30px;
-   margin: 10px 10px;
-   background-color: rgba(255, 166, 0, 0);
-   font-size: 15px;
-   border: 2px rgba(255, 68, 0, 0.788);
- } 
- .div1{
-  margin-left: 50%;
- }
- a{
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.986);
- }
- a:hover{
-  color: antiquewhite;
- }
-
-/* Layout */
-
-#container {
-  display: flex;
-  min-height: 100vh;
-}
-
- #sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  margin: 5px 0;
-}
-
-#sidebar ul li a:hover {
-  background-color: rgba(255, 68, 0, 0.87);
+  margin: 10px 10px;
+  background-color: rgba(255, 166, 0, 0);
+  font-size: 15px;
+  border: 2px rgba(255, 68, 0, 0.788);
 } 
- 
+.div1{
+ margin-left: 50%;
+}
+a{
+ text-decoration: none;
+ color: rgba(0, 0, 0, 0.986);
+}
+a:hover{
+ color: antiquewhite;
+}
+#btn-login{
+ color: black;
+}
+
+/* Container to hold sidebar and main content */
+#container {
+ display: flex;
+ flex: 1; 
+ overflow: hidden; 
+}
+
+/* Sidebar (Aside) */
 #sidebar {
-  width: 25%;
-  background-color: orangered;
-  color: antiquewhite;
-  padding: 20px;
-}
-
-#sidebar h2 {
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
-#sidebar ul {
-  list-style-type: none;
-}
-
-#sidebar li {
-  margin: 10px 0;
-}
+ width: 25%;
+ background-color: orangered;
+ color: antiquewhite;
+ padding: 20px;
+ overflow-y: auto; 
+ height: 100%;  
+ }
 
 #sidebar a {
-  text-decoration: none;
-  color: antiquewhite;
-  font-size: 16px;
-  padding: 8px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+ color: antiquewhite;
+ display: block;
+ padding: 10px;
+ text-decoration: none;
 }
 
 #sidebar a:hover {
-  background-color: orangered;
+ background-color: rgba(255, 68, 0, 0.582);
+}
+#sidebar ul {
+ list-style-type: none;
 }
 
-
-
-/* Main content */
-    #main-content {
-  /* margin-left: 10px;  */
-    overflow: auto;
-    width: 100%; 
-    padding: 20px;
-    background-color: rgba(250, 235, 215, 0.438);
-}   
-
-#main-content h2 {
-  font-size: 24px;
-    margin-bottom: 10px;
-  }
-  #main-content h3{
-    padding: 10px 0;
-    font-size: 20px;
-  }
-  #main-content p{
-    margin-bottom: 10px;
-    font-size: 17px;
-    
-  }
-
-.module {
-  display: block;
+/* Main content area */
+#main-content {
+ width: 100%;
+ overflow-y: auto; 
+ padding: 20px;
+  height: 100%;  
+}
+#main-content h3{
+ margin: 10px 0;
+}
+#main-content p{
+ margin-bottom: 10px;
+}
+#main-content pre{
+ margin-bottom: 10px;
+ font-size: 15px;
+}
+/* Module content */
+#module {
+ margin-bottom: 20px;
 }
 
-/* Workspace and Editor */
+/* Workspace */
 #workspace {
-  background-color: rgba(250, 235, 215, 0.068);
-  border: 1px solid orangered;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 0 10px orangered;
+ margin-top: 10px;
+ 
+ padding-top: 20px;
 }
 
 #editor {
-  height: 300px;
-  width: 100%;
-  margin-bottom: 20px;
+ width: 100%;
+ height: 300px;
+ background-color: #2e2e2e;
 }
 
+/* Buttons */
+button {
+ padding: 10px 20px;
+ margin-top: 20px;
+ cursor: pointer;
+ border: none;
+ background-color: orangered;
+ color: antiquewhite;
+ font-size: 16px;
+ border-radius: 5px;
+}
+
+button:hover {
+ background-color: rgba(255, 68, 0, 0.493);
+}
+
+#module-controls {
+ margin-top: 20px;
+ display: flex;
+ justify-content: space-between;
+}
+
+/* Iframe for live preview */
 #preview-area {
-  margin-top: 20px;
+ margin-top: 20px;
+ /* border-top: 2px solid #ccc; */
+ padding-top: 20px;
 }
 
 #preview-frame {
-  width: 100%;
-  height: 300px;
-  border: 1px solid orangered;
+ width: 100%;
+ height: 300px;
+ border: 1px solid orangered;
 }
 
-/* Navigation buttons */
-#module-controls {
-  margin-top: 20px;
-  text-align: center;
+::-webkit-scrollbar {
+ width: 12px;
 }
 
-#previous-btn,
-#next-btn {
-  background-color: orangered;
-  color: antiquewhite;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 0 10px;
-  border-radius: 5px;
-  display: inline-block;
-  text-align: center;
-}
-#preview-btn{
-  background-color: orangered;
-  color: antiquewhite;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  
+::-webkit-scrollbar-track {
+ background: antiquewhite;
 }
 
-#previous-btn:disabled,
-#next-btn:disabled {
-  background-color: orangered;
-  cursor: not-allowed;
+::-webkit-scrollbar-thumb {
+ background: orangered;
+ border-radius: 10px;
 }
 
-#previous-btn:hover,
-#next-btn:hover {
-  background-color: orangered;
+::-webkit-scrollbar-thumb:hover {
+ background: antiquewhite;
 }
 
-/* Ensure buttons are displayed properly */
-#module-controls {
-  position: relative;
-  top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-/* Navigation buttons */
-#module-controls {
-  position: relative;
-  display: flex;
-  justify-content: space-between; 
-  margin-top: 20px;
-  height: 60px;
-}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+ #sidebar {
+     width: 100%;
+     position: relative;
+     height: auto;
+ }
 
-#previous-btn,
-#next-btn {
-  background-color: orangered;
-  color: antiquewhite;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 10px;
-}
-
-#previous-btn {
-  left: 10px; 
-}
-
-#next-btn {
-  right: 10px; 
+ #main-content {
+     margin-left: 0;
+     width: 100%;
+ }
+ 
+ #sidebar a {
+     padding: 15px;
+     font-size: 18px;
+ }
 }

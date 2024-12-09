@@ -4,45 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>Log In</title>
 </head>
-
 <body>
-      
-<div class="container1"> 
-  <div class="inner-container">
-      <!-- Login Form -->
-  <div class="form-container login-container">
-          <form id="loginForm" class="form">
-            <h1>Login</h1>
+    <div class="container1"> 
+        <div class="inner-container">
+          <!-- Login Form -->
+          <div class="form-container login-container active">
+            <form id="loginForm" class="form">
+              <h1>Login</h1>
               <input type="email" placeholder="Email" class="input5" required />
               <input type="password" placeholder="Password" class="input5" required />
               <button type="submit" class="button5">Login</button>
               <p>
-                  Don't have an account? 
-                  <a href="#" id="showSignUp" class="a">Sign Up</a>
+                Don't have an account? 
+                <a href="#" id="showSignUp" class="a">Sign Up</a>
               </p>
-          </form>
-      </div>
-
-      <!-- Sign Up Form -->
-      <div class="form-container sign-up-container">
-          <form id="signUpForm" class="form">
+              <p>
+                <a href="#" id="showForgotPassword" class="a">Forgot Password?</a>
+              </p>
+            </form>
+          </div>
+    
+          <!-- Sign-Up Form -->
+          <div class="form-container sign-up-container">
+            <form id="signUpForm" class="form">
               <h1>Sign Up</h1>
               <input type="text" placeholder="Name" class="input5" required />
               <input type="email" placeholder="Email" class="input5" required />
               <input type="password" placeholder="Password" class="input5" required />
               <button type="submit" class="button5">Sign Up</button>
               <p>
-                  Already have an account? 
-                  <a href="#" id="showLogin">Login</a>
+                Already have an account? 
+                <a href="#" id="showLogin" class="a">Login</a>
               </p>
-          </form>
-      </div>
-  </div>
-</div>
-<script src="../landing.js"></script>
+            </form>
+          </div>
+    
+          <!-- Forgot Password Form -->
+          <div class="form-container forgot-password-container">
+            <form id="forgotPasswordForm" class="form">
+              <h1>Forgot Password</h1>
+              <input type="email" placeholder="Email" class="input5" required />
+              <button type="submit" class="button5">Reset Password</button>
+              <p>
+                <a href="#" id="showLoginFromForgot" class="a">Back to Login</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div> 
+
+<script src="../scripts/landing.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
