@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise Generator with Ace Editor</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/css_exercise.css">
+    </head>
+<body>
+    <header>
+        <nav>
+         <a href="index.html"><img src="../assets/logo/kNOWIT LOGO.png" alt="this is a logo" class="logo1"></a>
+         <a href="index.html"><img src="../assets/logo/KNOW IT 3.png" alt="logo" class="logo2"></a>
+         <div class="div1">
+         <button class="but2"><a href="../pages/html_course.html">HTML</a></button>
+         <button class="but2"><a href="../pages/css_course.html">CSS</a></button>
+         <button class="but2"><a href="../pages/javascript.html">JAVASCRIPT</a></button>
+         <a href="../pages/login.html"><button class="but2" type="submit" id="btn-login">Log In</button></a>
+        </div>
+        </nav>
+         </header>  
+       <div class="container">
+        <aside>
+            <h2>Modules</h2>
+            <ul id="module-links"></ul>
+            <h2>Exercises</h2>
+            <ul id="exercise-links"></ul>
+        </aside>
+        <main>
+            <header>
+                <h1>CSS Exercises</h1>
+            </header>
+            <section id="exercise-content">
+                <h2 id="exercise-title">Exercise Title</h2>
+                <p id="exercise-task">Exercise task goes here...</p>
+                <div id="editor"></div>
+                <div id="nav-buttons">
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+                <div id="action-buttons">
+                    <button id="run-btn">Run Code</button>
+                    <button id="check-btn">Check Answer</button>
+                </div>
+                <div id="preview"></div>
+                <div id="result-message"></div>
+                <div id="progress">Progress: <span id="progress-text">0%</span></div>
+            </section>
+        </main>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+
+    <script src="../scripts/css_exercise.js"></script>
+
+</body>
+</html>
