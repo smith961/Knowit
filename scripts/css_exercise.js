@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "CSS Introduction": [
             {
                 title: "Exercise 1: Basic CSS Styling",
-                task: "Apply a background color to the body, change the color of the heading to blue, and center-align it. Change the font size of the paragraph to 18px.",
+         task: "Apply a lightblue background color to the body, change the color of the heading to blue, and center-align it. Change the font size of the paragraph to 18px and change the color to black.",
                 predefinedCode: `
                 <h1>Welcome to CSS Introduction</h1>
                 <p>This is a basic introduction to CSS styling.</p>
@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     h1 {
                         color: blue;
                         text-align: center;
-                        font-size: 36px;
                     }
                     p {
                         font-size: 18px;
