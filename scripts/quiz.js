@@ -13,16 +13,16 @@ const questionsByCategory = {
        { question: "What is the correct syntax for inserting a comment in HTML?", answers: [{ text: "<Comment>", correct: true }, { text: " // Comment", correct: false }, { text: "/* Comment */", correct: false }, { text: " # Comment", correct: false }] }
     ],
     css: [
-        { question: "What is the chemical symbol for gold?", answers: [{ text: "Au", correct: true }, { text: "Ag", correct: false }, { text: "Pb", correct: false }, { text: "Fe", correct: false }] },
-        { question: "What is the powerhouse of the cell?", answers: [{ text: "Nucleus", correct: false }, { text: "Mitochondria", correct: true }, { text: "Ribosome", correct: false }, { text: "Endoplasmic Reticulum", correct: false }] },
-        { question: "What is the speed of light?", answers: [{ text: "300,000 km/s", correct: true }, { text: "150,000 km/s", correct: false }, { text: "400,000 km/s", correct: false }, { text: "200,000 km/s", correct: false }] },
-        { question: "What is the main gas found in the air we breathe?", answers: [{ text: "Oxygen", correct: false }, { text: "Nitrogen", correct: true }, { text: "Carbon Dioxide", correct: false }, { text: "Hydrogen", correct: false }] },
-        { question: "What part of the brain is responsible for coordination?", answers: [{ text: "Cerebrum", correct: false }, { text: "Cerebellum", correct: true }, { text: "Brainstem", correct: false }, { text: "Thalamus", correct: false }] },
-        { question: "What is H2O more commonly known as?", answers: [{ text: "Hydrogen Peroxide", correct: false }, { text: "Water", correct: true }, { text: "Ozone", correct: false }, { text: "Sodium Chloride", correct: false }] },
-        { question: "What force keeps us on the ground?", answers: [{ text: "Friction", correct: false }, { text: "Gravity", correct: true }, { text: "Magnetism", correct: false }, { text: "Inertia", correct: false }] },
-        { question: "What is the largest organ in the human body?", answers: [{ text: "Heart", correct: false }, { text: "Skin", correct: true }, { text: "Liver", correct: false }, { text: "Lungs", correct: false }] },
-        { question: "What is the process by which plants make their food?", answers: [{ text: "Photosynthesis", correct: true }, { text: "Respiration", correct: false }, { text: "Transpiration", correct: false }, { text: "Fermentation", correct: false }] },
-        { question: "What type of animal is a frog?", answers: [{ text: "Mammal", correct: false }, { text: "Reptile", correct: false }, { text: "Amphibian", correct: true }, { text: "Fish", correct: false }] }
+        { question: "What does CSS stand for?", answers: [{ text: " Cascading Style Sheets", correct: true }, { text: " Creative Style Sheets", correct: false }, { text: " Computer Style Sheets", correct: false }, { text: " Cascading Simple Sheets", correct: false }] },
+        { question: "What is the correct CSS syntax to change the background color of a page to blue?", answers: [{ text: "background: blue;", correct: false }, { text: " background-color: blue;", correct: true }, { text: " color: blue;", correct: false }, { text: " bgcolor: blue;", correct: false }] },
+        { question: "How do you define a color using RGB in CSS?", answers: [{ text: "rgb(255, 0, 0)", correct: true }, { text: "rgb(0, 0, 255)", correct: false }, { text: " rgba(255, 0, 0, 0.5)", correct: false }, { text: " red(255, 0, 0)", correct: false }] },
+        { question: " How do you add a solid black border with a width of 2px to an element?", answers: [{ text: "border-color: black;", correct: false }, { text: "border: 2px solid black;", correct: true }, { text: " border-width: 2px;", correct: false }, { text: " border-style: solid;", correct: false }] },
+        { question: " What is the property used to create space outside an element?", answers: [{ text: " padding", correct: false }, { text: "margin", correct: true }, { text: "border", correct: false }, { text: "space", correct: false }] },
+        { question: "Which property is used to create space inside an element?", answers: [{ text: "margin", correct: false }, { text: "padding", correct: true }, { text: "content", correct: false }, { text: " space", correct: false }] },
+        { question: " How do you set the width of an element to 100px?", answers: [{ text: " size: 100px;", correct: false }, { text: "width: 100px;", correct: true }, { text: "width: 100%;", correct: false }, { text: "height: 100px;", correct: false }] },
+        { question: "Which property is part of the CSS box model and defines the space inside an element's border?", answers: [{ text: " margin", correct: false }, { text: "padding", correct: true }, { text: "border", correct: false }, { text: "width", correct: false }] },
+        { question: "How do you apply styles based on the screen size in CSS?", answers: [{ text: " @media screen and (max-width: 600px) { }", correct: true }, { text: "@screen and (max-width: 600px) { }", correct: false }, { text: " @media (max-width: 600px) { }", correct: false }, { text: " @media query (max-width: 600px) { }", correct: false }] },
+        { question: "How do you change the color of a link when hovered?", answers: [{ text: "a.link:hover { color: red; }", correct: false }, { text: "a:hover { text-color: red; }", correct: false }, { text: " a:hover { color: red; }", correct: true }, { text: "link:hover { color: red; }", correct: false }] }
     ],
     javascript: [
         { question: "What does JavaScript do?", answers: [{ text: " It is used for creating database queries.", correct: false }, { text: "It is used for creating web pages.", correct: true }, { text: "It is used for creating server-side applications.", correct: false }, { text: " It is used for styling web pages.", correct: false }] },
@@ -183,6 +183,38 @@ const questionsByCategory = {
     startQuiz(); // Restart the quiz
  });
    
+    
+   
+
+
+    
+
+
+    
+
+    
+
+
+    
+
+   
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+    
+
+
+ 
+
    
 
   
