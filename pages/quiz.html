@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="../assets/logo/Knowit.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/quiz.css">
+    
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <a href="./index.html"><img src="../assets/logo/KNOW IT 3.png" alt="Logo" class="logo"></a> <!-- Add your logo image here -->
+    </div>
+
+    <div class="hamburger" onclick="toggleNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about_us.html">About Us</a>
+        <a href="">Contact</a>
+        <a href="">FAQ</a>
+    
+
+   
+    </nav>
+</header>
+    <div class="main-content">
+    <div class="container">
+        <h2>Answer The Following Questions?</h2>
+        <div>
+            <label id="select-category-label">Select Category:</label>
+            <div id="category-buttons">
+                <button class="category-btn" data-category="html">HTML</button>
+                <button class="category-btn" data-category="css">CSS</button>
+                <button class="category-btn" data-category="javascript">JavaScript</button>
+               
+            </div>
+        </div>
+        <div id="timer">Time Remaining: <span id="time">120</span> seconds</div>
+        <div id="question-container"></div>
+        <div id="answer-buttons" class="answer-container"></div>
+        <div id="attempts-message" class="feedback"></div>
+        <div id="feedback-message" class="feedback"></div>
+        <div class="button-container">
+            <button id="next-button" class="btn" style="display: none;">Next</button>
+            <button id="restart-button" class="btn" style="display: none;">Restart</button>
+        </div>
+        <div id="result-container" class="result-container">
+            <div>Your score: <span id="score"></span></div>
+        </div>
+    </div>
+</div>
+
+   
+
+<!-- social info  -->
+<div class="footer-sections">
+    <div class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form action="subscribe.php" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <div class="help-contact">
+        <h3>Help & Support</h3>
+        <ul>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+
+   
+</div>
+
+<hr>
+<!-- footer section -->
+<footer>
+    <p>&copy; 2024 Knowit Quiz. All rights reserved.</p>
+    <p>
+        <a href="">Terms and Conditions</a> | 
+        <a href="">Privacy Policy</a>
+    </p>
+</footer>
+<script>
+    function toggleNav() {
+    const navMenu = document.querySelector('nav'); // Select the nav element
+    navMenu.classList.toggle('active'); // Toggle the 'active' class for visibility
+}
+</script>
+</body>
+</html>
