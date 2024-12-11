@@ -409,6 +409,9 @@ p a:hover {
     color: antiquewhite;
     text-decoration: none;
 } 
+#button1{
+    color:antiquewhite;
+}
  #button3{
     color: orangered;
 } 

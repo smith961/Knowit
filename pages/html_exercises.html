@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exercise Platform</title>
+    <link rel="stylesheet" href="../styles/html_exercises.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.12.3/ace.js" defer></script>
+   
+</head>
+<body>
+ <header>
+  <nav>
+   <a href="index.html"><img src="../assets/logo/kNOWIT LOGO.png" alt="this is a logo" class="logo1"></a>
+   <a href="index.html"><img src="../assets/logo/KNOW IT 3.png" alt="logo" class="logo2"></a>
+   <div class="div1">
+   <button class="but2"><a href="../pages/html_course.html">HTML</a></button>
+   <button class="but2"><a href="../pages/css_exercise.html">CSS</a></button>
+   <button class="but2"><a href="../pages/javascript_exercise.html">JAVASCRIPT</a></button>
+   <a href="../pages/login.html"><button class="but2" type="submit" id="btn-login">Log In</button></a>
+  </div>
+  </nav>
+   </header>  
+ <div class="container">
+  <aside>
+      <h2>Modules</h2>
+      <ul id="module-links"></ul>
+      <h2>Exercises</h2>
+      <ul id="exercise-links"></ul>
+  </aside>
+  <main>
+      <header>
+          <h1>HTML Exercises</h1>
+      </header>
+      <section id="exercise-content">
+          <h2 id="exercise-title">Exercise Title</h2>
+          <p id="exercise-task">Exercise task goes here...</p>
+          <div id="editor"></div>
+          <div id="nav-buttons">
+              <button id="prev-btn">Previous</button>
+              <button id="next-btn">Next</button>
+          </div>
+          <div id="action-buttons">
+              <button id="run-btn">Run Code</button>
+              <button id="check-btn">Check Answer</button>
+          </div>
+          <div id="preview"></div>
+          <div id="result-message"></div>
+          <div id="progress">Progress: <span id="progress-text">0%</span></div>
+      </section>
+  </main>
+</div>
+
+    <script src="../scripts/html_exercise.js"></script>
+</body>
+</html>

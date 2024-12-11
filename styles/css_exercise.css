@@ -1,0 +1,246 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ background-color: rgba(250, 235, 215, 0.384);
+ display: flex;
+ flex-direction: column; /* Allow header and content to stack vertically */
+ height: 100vh;
+ overflow: hidden; /* Prevent body scrolling */
+}
+
+/* Header stays on top */
+header {
+ background-color: orangered;
+ color: black;
+ padding: 15px 20px;
+ text-align: center;
+ margin-bottom: 10px;
+ z-index: 1000; /* Keep it on top of other elements */
+}
+.logo1{
+ width: auto;
+ height: 40px;
+ margin: 10px 15px;
+ border: 10px ;
+ }
+.logo2{
+  width: auto;
+ height: 30px;
+ margin: 10px 0px;
+}
+nav{
+ display: flex; 
+ align-items: center;
+ height: 40px;
+ padding: 20px 0;
+ }   
+ .but2{
+  width: 100px;
+  height: 30px;
+  margin: 10px 10px;
+  background-color: rgba(255, 166, 0, 0);
+  font-size: 15px;
+  border: 2px rgba(255, 68, 0, 0.788);
+} 
+.div1{
+ margin-left: 50%;
+}
+a{
+ text-decoration: none;
+ color: rgba(0, 0, 0, 0.986);
+}
+a:hover{
+ color: antiquewhite;
+}
+
+/* Sidebar (aside) stays fixed to the left */
+aside {
+ width: 250px;
+ background-color: orangered;
+ padding: 10px;
+ height: calc(100vh - 60px); /* Full height minus the header */
+ overflow-y: auto; /* Scroll for the sidebar */
+ position: fixed;
+ top: 50px; /* Ensure it starts below the header */
+ left: 0;
+ box-shadow: 2px 0px 5px orangered;
+ transition: width 0.3s ease-in-out;
+ margin-top: 20px;
+}
+
+aside h2 {
+ margin-bottom: 10px;
+}
+
+aside ul {
+ list-style-type: none;
+ padding-left: 0;
+}
+
+aside ul li a {
+ color: antiquewhite;
+ text-decoration: none;
+ display: block;
+ margin-bottom: 10px;
+ padding: 5px;
+ border-radius: 5px;
+ transition: background-color 0.3s ease;
+}
+
+aside ul li a:hover {
+ background-color: rgba(255, 68, 0, 0.548);
+}
+
+/* Main content  */
+main {
+ margin-left: 250px; 
+ padding: 10px;
+ height: calc(100vh - 80px); 
+ overflow-y: auto; 
+ flex: 1;
+ background-color: rgba(250, 235, 215, 0.795);
+ transition: margin-left 0.3s ease-in-out;
+}
+
+/* Container containing everything */
+.container {
+ display: flex;
+ flex-wrap: nowrap;
+ min-height: 100vh;
+}
+
+/* Module content  */
+#exercise-content {
+ background-color: antiquewhite;
+ border-radius: 8px;
+ padding: 20px;
+ box-shadow: 0 2px 10px orangered;
+}
+
+#exercise-title {
+ font-size: 20px;
+ margin-bottom: 10px;
+}
+
+#editor {
+ height: 200px;
+ margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+ background-color: orangered;
+ color: antiquewhite;
+ border: none;
+ padding: 10px;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+ margin-right: 10px;
+}
+
+button:hover {
+ background-color: rgba(255, 68, 0, 0.685);
+}
+
+button:disabled {
+ background-color: rgba(255, 68, 0, 0.678);
+ cursor: not-allowed;
+}
+
+#preview {
+ border: 1px solid orangered;
+ padding: 10px;
+ margin-top: 20px;
+ min-height: 100px;
+ background-color: antiquewhite;
+}
+
+#result-message {
+ font-weight: bold;
+ margin-top: 10px;
+ 
+}
+
+#progress {
+ margin-top: 20px;
+ font-size: 16px;
+}
+
+#progress-text {
+ font-weight: bold;
+}
+
+/* Navigation buttons */
+#nav-buttons {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 20px;
+}
+
+/* Action buttons  */
+#action-buttons {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 20px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+ aside {
+   width: 200px; 
+   height: calc(100vh - 60px); 
+ }
+
+ main {
+   margin-left: 200px;
+   
+ }
+
+ #sidebar a {
+   font-size: 16px;
+ }
+
+ button {
+   padding: 5px 10px; 
+ }
+
+ 
+ .container {
+   flex-direction: column;
+   
+ }
+
+ 
+ header {
+   padding: 5px;
+ }
+}
+
+@media (max-width: 480px) {
+ aside {
+   width: 100%; 
+   position: relative; 
+   height: auto;
+ }
+
+ main {
+   margin-left: 0; 
+   
+ }
+
+ #sidebar a {
+   font-size:12px; 
+ }
+
+ 
+ #nav-buttons,
+ #action-buttons {
+   flex-direction: column;
+ }
+}
