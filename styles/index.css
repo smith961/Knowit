@@ -433,3 +433,61 @@ p a:hover {
 #ton1{
     color: antiquewhite;
 }
+
+.faq-carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 68, 0, 0.568);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling for each slide */
+.faq-slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.faq-slide.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Styling for questions */
+.faq-question {
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling for answers */
+.faq-answer {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* General responsive design */
+@media (max-width: 768px) {
+    .faq-carousel {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .faq-question {
+        font-size: 20px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
+    }
+}
