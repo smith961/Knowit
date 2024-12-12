@@ -83,14 +83,14 @@
             padding: 10px;
             font-size: 16px;
             color: white;
-            background-color: #007BFF; /* Bootstrap primary color */
+            background-color: orange; /* Bootstrap primary color */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         .category-btn:hover {
-            background-color: #0056b3; /* Darker shade on hover */
+            background-color: orangered; /* Darker shade on hover */
         }
 
         .button-container {
@@ -101,7 +101,7 @@
 }
 
 .btn {
-    background-color: #3498db; /* Main button color */
+    background-color: orange; /* Main button color */
     color: #fff; /* Text color */
     padding: 12px 24px; /* Increased padding for better touch targets */
     border: none; /* No border */
@@ -118,7 +118,7 @@
 }
 
 .btn:hover {
-    background-color: #2980b9; /* Darker shade on hover */
+    background-color: orangered; /* Darker shade on hover */
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 

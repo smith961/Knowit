@@ -86,6 +86,7 @@ const questionsByCategory = {
     attemptsMessage.style.display = 'none';
     wrongAttempts = 0; // Reset wrong attempts when the quiz starts
     setNextQuestion();
+    
     startTimer();
  }
  
@@ -120,6 +121,7 @@ const questionsByCategory = {
  
     if (correct) {
         score += 10; // Add 10 points for a correct answer
+        sessionStorage.setItem('score', score); // Store score in session storage
         feedbackMessage.innerText = 'Correct!';
         feedbackMessage.style.color = 'green';
         feedbackMessage.style.display = 'block';
@@ -158,6 +160,7 @@ const questionsByCategory = {
     // Check if the score indicates all answers were correct
     if (score === questions.length * 10) { // Assuming each question is worth 10 points
         // Redirect to the congratulations page with the score
+        scoreDisplay.innerHTML = `${score}`;
         window.location.href = `congratulations.php?score=${score}`;
     } else {
         // Show the restart button if not all answers are correct
