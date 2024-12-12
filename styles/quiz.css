@@ -1,0 +1,399 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: orange;
+            color: black;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        header .logo {
+            width: 70px; /* Set your desired width for the logo */
+            height: auto; /* Maintain aspect ratio */
+        }
+        header .login, header .logout {
+            background-color: #e74c3c;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* Container styling */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Timer styling */
+#timer {
+    font-size: 24px; /* Increase font size for better visibility */
+    color: #e74c3c; /* Set the text color to a noticeable red */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Add some space below the timer */
+    text-align: center; /* Center align the timer text */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    padding: 10px; /* Add padding around the timer text */
+    border: 2px solid #e74c3c; /* Border matching the text color */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+   #category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .category-btn {
+            flex: 1 1 45%; /* Buttons take up to 45% of the width */
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF; /* Bootstrap primary color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .category-btn:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .button-container {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+    justify-content: space-between; /* Space buttons evenly */
+    margin: 10px 0; /* Margin around button container */
+}
+
+.btn {
+    background-color: #3498db; /* Main button color */
+    color: #fff; /* Text color */
+    padding: 12px 24px; /* Increased padding for better touch targets */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline on text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 5px; /* Adjust margin for spacing */
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and transform */
+    text-align: center; /* Center align text */
+    flex: 1 1 calc(50% - 10px); /* Two buttons in a row, accounting for margins */
+    max-width: calc(50% - 10px); /* Prevent buttons from exceeding half of the container */
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.btn:active {
+    background-color: #1f639c; /* Even darker shade when button is clicked */
+    transform: translateY(0); /* Reset lift effect on click */
+}
+/* Question styling */
+#question-container {
+    font-size: 20px; /* Font size for the question */
+    text-align: center; /* Center align the question */
+    color: #333; /* Dark color for the question */
+    margin: 20px 0; /* Space above and below the question */
+    padding: 15px; /* Padding inside the question container */
+    border: 1px solid #ddd; /* Light border around the question */
+    border-radius: 5px; /* Rounded corners for the question */
+    background-color: #f9f9f9; /* Light background for the question */
+}
+
+/* Answer button styling */
+.answer-container {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow buttons to wrap if necessary */
+    justify-content: space-between; /* Space buttons evenly */
+}
+
+.answer-btn {
+    background-color: #2ecc71; /* Answer button color */
+    color: #fff; /* Text color */
+    padding: 12px 24px; /* Padding for better touch targets */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline on text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 5px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and transform */
+    text-align: center; /* Center align text */
+    flex: 1 1 calc(50% - 10px); /* Two buttons in a row, accounting for margins */
+    max-width: calc(50% - 10px); /* Prevent buttons from exceeding half of the container */
+}
+
+.answer-btn:hover {
+    background-color: #27ae60; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.answer-btn:active {
+    background-color: #219653; /* Even darker shade when button is clicked */
+    transform: translateY(0); /* Reset lift effect on click */
+}
+
+.container h2 {
+    font-size: 28px; /* Set a larger font size for prominence */
+    color: #333; /* Dark color for the text */
+    margin: 20px 0; /* Vertical spacing around the heading */
+    font-weight: bold; /* Make the font bold */
+    text-transform: uppercase; /* Transform text to uppercase for emphasis */
+    letter-spacing: 1px; /* Add spacing between letters for readability */
+    border-bottom: 2px solid #007BFF; /* Add a bottom border for emphasis */
+    padding-bottom: 10px; /* Space between the text and the border */
+    text-align: center;
+}
+
+/* Feedback message styling */
+.feedback {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Result container styling */
+.result-container {
+    display: none; /* Hidden by default */
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+    .footer-sections {
+        display: flex;
+        justify-content: space-around;
+        background-color:  rgba(248, 248, 21, 0.514);
+        color: orangered;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .footer-sections div {
+        flex: 1;
+        margin: 0 20px;
+    }
+
+    .footer-sections h3 {
+        margin-bottom: 20px;
+        color: orangered;
+    }
+
+    .newsletter form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter input[type="email"] {
+        padding: 10px;
+        width: 80%;
+        max-width: 400px;
+        border-radius: 5px;
+        border: 1px solid #3498db;
+        margin-bottom: 10px;
+    }
+
+    .newsletter button {
+        padding: 10px 20px;
+        background-color: orange;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .help-contact ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .help-contact li {
+        margin: 10px 0;
+    }
+
+    .help-contact a {
+        color: orange;
+        text-decoration: none;
+    }
+
+    .help-contact a:hover {
+        text-decoration: underline;
+    }
+
+    .social-media a {
+        margin: 0 10px;
+    }
+
+    .social-media img {
+        width: 40px;
+        height: auto;
+    }
+
+    /* Styles for the hamburger menu */
+.hamburger {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s; /* Animation for transition */
+}
+
+    footer {
+        background-color: orange;
+        color: black;
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    footer a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Media query for small screens (max-width 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Logo and hamburger on opposite sides */
+    .logo {
+        width: 50px; /* Reduce logo size for smaller screens */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on small screens */
+    }
+
+    /* Hide navigation menu initially on small screens */
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: orange;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000; /* Ensure menu is above other content */
+    }
+
+    nav.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    nav a {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    /* Flex container and buttons in column direction for small screens */
+    .flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-container img {
+        margin: 0 auto 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    /* Adjust button and text size for smaller screens */
+    .btn {
+        padding: 10px 15px;
+        font-size: 16px;
+        flex: 1 1 100%; /* Buttons take full width on small screens */
+        max-width: 100%;
+    }
+
+    .category-btn {
+        flex: 1 1 100%; /* Make buttons full width */
+        margin: 10px 0;
+    }
+
+    /* Adjust the main content layout */
+    .main-content {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Timer and feedback adjustments */
+    #timer {
+        font-size: 20px;
+    }
+
+    /* Footer sections stacked vertically */
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-sections div {
+        margin: 20px 0;
+    }
+
+    /* Reduce size of social media icons */
+    .social-media img {
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    /* Adjust video container for full width on small screens */
+    .video-container video {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
