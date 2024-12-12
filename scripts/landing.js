@@ -11,7 +11,7 @@
 // }
 // setInterval(animateImages, 3000);
 
-// Track the current slide index
+// // Track the current slide index
 let currentSlide = 0; 
 const slides = document.querySelectorAll('.faq-slide'); // Select all slides
 
@@ -68,49 +68,4 @@ function resetAutoSlide() {
 
 
 
-  // Function to show a success notification
-  function showNotification(message) {
-    const notification = document.createElement('div');
-    notification.classList.add('notification', 'show');
-    notification.innerText = message;
-    document.body.appendChild(notification);
-  
-    // Remove notification after 3 seconds
-    setTimeout(() => {
-      notification.remove();
-    }, 3000);
-  }
-  
-  // Event listeners for navigation links
-  document.getElementById('showSignUp').addEventListener('click', () => {
-    switchForm('sign-up-container');
-  });
-  
-  document.getElementById('showLogin').addEventListener('click', () => {
-    switchForm('login-container');
-  });
-  
-  document.getElementById('showForgotPassword').addEventListener('click', () => {
-    switchForm('forgot-password-container');
-  });
-  
-  document.getElementById('showLoginFromForgot').addEventListener('click', () => {
-    switchForm('login-container');
-  });
-  
-  // Handle form submissions
-  document.querySelectorAll('.form').forEach(form => {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-  
-      // Validate and clean the email input
-      const emailInput = form.querySelector('input[type="email"]');
-      if (emailInput) {
-        emailInput.value = emailInput.value.replace(/'/g, '');
-      }
-  
-      // Show success notification
-      showNotification('Form submitted successfully!');
-    });
-  });
-  
+ 
