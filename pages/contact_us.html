@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - KnowIt</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Full viewport height */
+    }
+
+    /* Header Styles */
+    header {
+      background-color: orangered;
+      color: black;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header .logo {
+      width: 70px; /* Set your desired width for the logo */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    header .login {
+      color: black;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    nav {
+      margin-left: auto;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Us Section */
+    .contact-us-container {
+      flex: 1; /* Takes up the remaining height */
+      padding: 40px;
+      background-color: antiquewhite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+      text-align: center;
+    }
+
+    .contact-us-title {
+      font-size: 50px;
+      color: orangered;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      width: 100%;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px orangered;
+      display: flex;
+      flex-direction: column; /* Ensure form elements stack vertically */
+      align-items: center; /* Center form elements horizontally */
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .contact-form input, 
+    .contact-form textarea, 
+    .contact-form select {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid orangered;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: orangered;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: darkorange;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+.contact-info{
+ margin-top: 20px;
+}
+
+    .social-media-links a {
+      color: orangered;
+      margin-right: 15px;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+
+    .social-media-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: orangered;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="../assets/logo/KNOW IT 3.png" alt="KnowIt Logo" class="logo">
+  <nav>
+    <a href="../pages/index.html">Home</a>
+    <a href="../pages/contact_us.html">Contact</a>
+    <a href="#">FAQ</a>
+  </nav>
+  <a href="#" class="login">Login</a>
+</header>
+
+<div class="contact-us-container">
+  <h1 class="contact-us-title">Contact Us</h1>
+  
+  <!-- Contact Form -->
+  <form action="submit_contact_form.php" method="POST" class="contact-form">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject">
+      <option value="general">General Inquiry</option>
+      <option value="support">Technical Support</option>
+      <option value="feedback">Feedback</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+  
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <p><strong>Email:</strong>knowit@gmail.com</p>
+    <p><strong>Phone:</strong>+234 814 883 4295</p>
+    <p>+234 812 410 6198</p>
+    <p><strong>Address:</strong>1, Damengoro ICT CENTRE</p>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="social-media-links">
+    <a href="https://twitter.com/knowit" target="_blank">Twitter</a>
+    <a href="https://facebook.com/knowit" target="_blank">Facebook</a>
+    <a href="https://linkedin.com/company/knowit" target="_blank">LinkedIn</a>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 KnowIt. All rights reserved.</p>
+  <p>
+    <a href="#">Terms and Conditions</a> | 
+    <a href="#">Privacy Policy</a>
+  </p>
+</footer>
+
+</body>
+</html>
