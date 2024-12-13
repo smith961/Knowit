@@ -171,7 +171,7 @@ const questionsByCategory = {
         // window.location.href = `congratulations.php?score=${score}`;
     } else {
         // Show the restart button if not all answers are correct
-        questionContainer.innerHTML = 'For you to be certified you need to anwser all questions correctly!!!';
+        questionContainer.innerHTML = '<strong>For you to be certified you need to anwser all questions correctly!!!</strong>';
         scoreDisplay.innerHTML = `${score}`;
         restartButton.style.display = 'block';
     }
