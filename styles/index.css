@@ -168,13 +168,15 @@ background-color:antiquewhite;
     box-shadow: 5px 10px inset orangered;
     border: orangered;
 }
-#image{
-float: right;
-width: auto;
-transition: opacity 1s ease-in-out;
 
-
-}
+#slideshow {
+    width: auto;  /* Ensure the image fits */
+    transition: opacity 0.5s ease;  /* Smooth fade transition */
+    opacity: 1;  /* Initially hidden */
+     float: right; 
+    display: block;
+  }
+  
 /* }
 @keyframes image{
     0%
@@ -445,6 +447,7 @@ p a:hover {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    box-shadow: 5px 10px orangered;
 }
 
 /* Styling for each slide */

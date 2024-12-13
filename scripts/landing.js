@@ -1,15 +1,24 @@
-// const images=["assets/landing/developer.png","assets/landing/landingpage2.png"];
-// let index = 0;
-// function animateImages(){
-//  const img = document.getElementById("image");
-//  img.style.opacity = 0;
-//  setTimeout (() => {
-//   index = (index + 1) % images.length;
-//   img.src = images[index];
-//   img.style.opacity = 1;
-//  }, 500);
-// }
-// setInterval(animateImages, 3000);
+let currentIndex = 0;
+const images = ['../assets/landing/developer.png', '../assets/landing/landingpage2.png'];  // Array of image sources
+const imgElement = document.getElementById('slideshow');
+
+function changeImage() {
+  // Fade out the image
+  imgElement.style.opacity = 0;
+
+  // Wait for the fade-out transition to complete before changing the image
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % images.length;  
+    imgElement.src = images[currentIndex];            
+
+    // Fade the image back in
+    imgElement.style.opacity = 1;
+  }, 500);  // Match this to your CSS transition duration for opacity (0.5s here)
+}
+
+// Start the slideshow, changing images every 3 seconds
+setInterval(changeImage, 3000);
+
 
 // // Track the current slide index
 let currentSlide = 0; 

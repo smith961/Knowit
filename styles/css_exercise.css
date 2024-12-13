@@ -95,6 +95,12 @@ aside ul li a {
 aside ul li a:hover {
  background-color: rgba(255, 68, 0, 0.548);
 }
+#module-links a:hover {
+  background-color: antiquewhite;
+  border-radius: 10px;
+ color: orangered; 
+ transition: 3s ease-in-out;
+}
 
 /* Main content  */
 main {
