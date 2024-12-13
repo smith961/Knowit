@@ -84,9 +84,11 @@ header{
   border-radius: 4px;
   transition: background-color 0.3s;
 }
-
-.sidebar a:hover {
-  background-color: orangered;
+#moduleList a:hover {
+  background-color: antiquewhite;
+  border-radius: 10px;
+ color: orangered; 
+ transition: 3s ease-in-out;
 }
 
 /* Main Content */

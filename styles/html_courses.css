@@ -101,6 +101,12 @@ a:hover{
 #sidebar ul {
  list-style-type: none;
 }
+#module-list a:hover {
+    background-color: antiquewhite;
+    border-radius: 10px;
+   color: orangered; 
+   transition: 3s ease-in-out;
+  }
 
 /* Main content area */
 #main-content {
