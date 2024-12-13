@@ -111,6 +111,7 @@ const questionsByCategory = {
     attemptsMessage.style.display = 'none';
     feedbackMessage.style.display = 'none';
     restartButton.style.display = 'none';
+    questionContainer.innerHTML = '<strong>Congratulations!!!<strong> your certificate awaits you!!!';
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -137,8 +138,12 @@ const questionsByCategory = {
         if (wrongAttempts >= maxAttempts) {
             // Store the current score in session storage before redirecting
             sessionStorage.setItem('score', score); // Store score in session storage
+            clearInterval(timer);
+            questionContainer.innerHTML = '<strong>Disqualified!!!<strong> Try again!!!';
+            scoreDisplay.innerHTML = `${score}`;
+            restartButton.style.display = 'block';
             // Redirect to disqualified page with the score
-            window.location.href = 'disqualification.php';
+            // window.location.href = 'disqualification.php';
         }
     }
  }
@@ -161,7 +166,7 @@ const questionsByCategory = {
     if (score === questions.length * 10) { // Assuming each question is worth 10 points
         // Redirect to the congratulations page with the score
         scoreDisplay.innerHTML = `${score}`;
-        window.location.href = `congratulations.php?score=${score}`;
+        // window.location.href = `congratulations.php?score=${score}`;
     } else {
         // Show the restart button if not all answers are correct
         scoreDisplay.innerHTML = `${score}`;
