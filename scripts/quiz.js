@@ -111,7 +111,7 @@ const questionsByCategory = {
     attemptsMessage.style.display = 'none';
     feedbackMessage.style.display = 'none';
     restartButton.style.display = 'none';
-    questionContainer.innerHTML = '<strong>Congratulations!!!<strong> your certificate awaits you!!!';
+   
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -160,15 +160,18 @@ const questionsByCategory = {
  function endQuiz() {
     clearInterval(timer); // Stop the timer
     resetState();
+   
     resultContainer.style.display = 'block'; // Show the result container
  
     // Check if the score indicates all answers were correct
     if (score === questions.length * 10) { // Assuming each question is worth 10 points
         // Redirect to the congratulations page with the score
+        questionContainer.innerHTML = '<strong>Congratulations!!!<strong> your certificate awaits you!!!';
         scoreDisplay.innerHTML = `${score}`;
         // window.location.href = `congratulations.php?score=${score}`;
     } else {
         // Show the restart button if not all answers are correct
+        questionContainer.innerHTML = 'For you to be certified you need to anwser all questions correctly!!!';
         scoreDisplay.innerHTML = `${score}`;
         restartButton.style.display = 'block';
     }
