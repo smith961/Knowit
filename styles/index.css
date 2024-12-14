@@ -1,21 +1,12 @@
-*{
+/* General Reset */
+*body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: rgba(250, 235, 215, 0.932);
    
 }
 
-body{
-    background-color: lemonchiffon; 
-    
-}
-
-.navbar{
-    z-index: 1000;
-    background-color: orange;
-    
-    
-}
  .dropdown-menu{
     background-color: orange;
  }
@@ -24,56 +15,56 @@ body{
     transition: 3s ease-in-out;
  }
  #btn{
-    border: 1px solid orangered;
+    border: 1px solid orange;
     color:rgba(0, 0, 0, 0.692);
 }
  #btn:hover{
-    background-color: orangered;
-    color: antiquewhite;
-    /* transition: 3s ease-in-out; */
+    background-color: antiquewhite;
+    color: orange;
+    
    
  }
  #search{
-    border: 1px solid orangered;
+    border: 1px solid orange;
     color: rgba(0, 0, 0, 0.692);
  }
  
  #search:hover{
-background-color: orangered;
-color: antiquewhite;
+background-color: antiquewhite;
+color: orange;
 transition: 3s ease-in-out;
  }
+
  #input:hover{
-    background-color: orangered;
-    color: antiquewhite;
+    background-color: antiquewhite;
+    color: orange;
     transition: 3s ease-in-out;
-    box-shadow: 2px 2px antiquewhite;
+    box-shadow: 2px 2px orange;
     }
+
     #input{
-        border: 1px solid orangered;
+        border: 1px solid orange;
     }
 
 #btn-login{
     border: 3px;
 }
 #btn-login:hover{
-    background-color: orangered;
+    background-color: orange;
     color: white;
 }
 .login-container{
-    background-color: rgba(255, 255, 0, 0.425);
+    background-color: orange;
     padding: 3px;
 }
 
 .img-container{
-    background-color:rgba(255, 255, 0, 0.425);
+    background-color: orange;
     display: flex;
     text-align: center;
     align-items: center;
     align-content: center;
-    padding: 50px;
-    
-    
+    padding: 50px;    
 }
 
 .login-image{
@@ -81,27 +72,30 @@ transition: 3s ease-in-out;
     height: 100px;
     width: 100px;
     }
+
 #navbar{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
-
 
 .section1{
     text-align: center;
-    background-color: rgba(255, 255, 0, 0.425);
+    background-color: antiquewhite;
     padding-top: 100px;
     padding-bottom: 100px;
     border-radius: 10px;
-    border: 2px outset orangered;
+    border: 2px outset orange;
     margin-top: 60px;
     font-family: Verdana, san-serif;
-    
+    }
 
-}
+    #button1{
+        color: saddlebrown;
+    }
 .section1 h1{
-    color:hsl(240, 78%, 34%);
+    color:orange;
     font-size: 60px;
     text-align: left;
     padding-left: 80px;
@@ -111,46 +105,43 @@ transition: 3s ease-in-out;
     padding-top: 10px;
     font-weight: 200;
     font-size: 48px;
-    color:orangered;
+    color: saddlebrown;
     text-align: center;
     padding-left: 150px;
 }
 
     .section2{
     text-align: center;
-    background-color:rgba(50, 50, 241, 0.747);
+    background-color: orange;
     padding-top: 100px;
 padding-bottom: 100px;
 border-radius: 10px;
-border: 2px inset yellow;
+border: 2px inset antiquewhite;
 }
 .section2 h1{
-    color:yellow;
+    color:antiquewhite;
     font-size: 200px;
 }
 .section2 p{
-    color:yellow;
+    color:antiquewhite;
     font-size: 50px;
     font-weight: 300;
 }
 
 .button1{
-    background-color: orangered;
-    color: antiquewhite;
-    /* border: 10px inset antiquewhite; */
+    background-color: antiquewhite;
     border-radius: 30px ;
+    border: 10px solid antiquewhite;
     font-size: 20px;
     height: 50px;
     width: 270px;
     margin-top: 27px;
-    box-shadow: 5px 10px antiquewhite;
-    border: orangered;
+    box-shadow: 5px 10px saddlebrown;
     margin-bottom: 10px;
 }
 .button2{
-    background-color: yellow;
-    color: blue;
-    border: 10px solid orangered;
+    background-color: orange;
+    border: 10px solid antiquewhite;
     border-radius: 30px;
     font-size: 20px;
     height: 60px;
@@ -159,14 +150,15 @@ border: 2px inset yellow;
 }
 .button3{
 background-color:antiquewhite;
-    color:orangered;
-    /* border: 10px outset orangered; */
     border-radius: 30px;
     font-size: 20px;
-    height: 60px;
+    height: 50px;
     width: 270px;
-    box-shadow: 5px 10px inset orangered;
-    border: orangered;
+    box-shadow: 5px 10px saddlebrown;
+    border: saddlebrown;
+}
+#button3{
+    color: saddlebrown;
 }
 
 #slideshow {
@@ -176,14 +168,7 @@ background-color:antiquewhite;
      float: right; 
     display: block;
   }
-  
-/* }
-@keyframes image{
-    0%
-    {
-        img
-    }
-} */
+
  
 .section3{
     text-align: center;
@@ -191,63 +176,62 @@ background-color:antiquewhite;
     padding-top: 100px;
 padding-bottom: 100px;
 border-radius: 10px;
-border: 2px solid blue;
+border: 2px solid saddlebrown;
 /* display: flex; */
 }
 .section3 h1{
-    color:blue;
+    color:orange;
     font-size: 200px;
 }
 .section3 p{
-    color:blue;
+    color:orange;
     font-size: 50px;
     font-weight: 300;
 }
-/* .form
-{
-    margin-top: 30px;
-} */
-
-/* .but-form{
-    margin: 25px;
-    text-align: center;
-    
-} */
 
 .but1{
-    background-color: orangered;
-    color: blue;
-    border: 10px solid blue;
+    background-color: orange;
+    border: 10px solid saddlebrown;
     border-radius: 30px;
     font-size: 20px;
     height: 60px;
     width: 270px;
     margin-top: 27px;
-    
-}
+    }
+
+    #but1{
+        color: saddlebrown;
+    }
 .but2{
     background-color: antiquewhite;
-    color: orangered;
-    border: 10px inset antiquewhite;
+    border: 10px inset orange;
     border-radius: 30px;
     font-size: 20px;
     height: 60px;
     width: 270px;
     margin: 25px;
 }
+#but2{
+color: orange;
+}
+
 .but3{
-background-color:blue;
+background-color:orange;
     color:antiquewhite;
-    border: orangered;
+    border: saddlebrown;
     border-radius: 30px;
     font-size: 20px;
     height: 50px;
     width: 270px;
-    box-shadow: 5px 10px orangered;
+    box-shadow: 5px 10px saddlebrown;
 }
+#but3{
+color: saddlebrown;
+}
+
 .section4{
     text-align: center;
-    background-color:rgba(255, 68, 0, 0.753);
+    background-color:orange;
     padding-top: 100px;
 padding-bottom: 100px;
 border-radius: 10px;
@@ -263,43 +247,51 @@ border: 2px solid antiquewhite;
     font-weight: 300;
 }
 .ton1{
-    background-color: orangered;
-    color: yellow;
-    border:  yellow;
+    background-color: antiquewhite;
+    border:saddlebrown;
     border-radius: 30px;
     font-size: 20px;
     height: 50px;
     width: 270px;
     margin-top: 27px;
-    box-shadow: 5px 10px inset yellow;
-    
+    box-shadow: 5px 10px saddlebrown;
+    }
+
+#ton1{
+    color: saddlebrown;
 }
 .ton2{
-    background-color: antiquewhite;
-    color: orangered;
-    border: 10px solid orangered;
+    background-color: orange;
+    border: 10px solid antiquewhite;
     border-radius: 30px;
     font-size: 20px;
     height: 60px;
     width: 270px;
     margin: 25px;
 }
+#ton2{
+color:antiquewhite;
+}
+
 .ton3{
-background-color:yellow;
-    color:orangered;
-    border: 10px inset antiquewhite;
+background-color:antiquewhite;
+    border: 10px inset saddlebrown;
     border-radius: 30px;
     font-size: 20px;
     height: 60px;
     width: 270px;
 }
+#ton3{
+    color: saddlebrown;
+}
+
 .section5{
     background-color: antiquewhite;
     padding: 100px ;
     text-align: center;
     font-family: sans-serif;
     border-radius: 10px;
-border: 2px inset blue;
+border: 2px inset saddlebrown;
 padding: 50px 200px;
 }
 .section5 h2{
@@ -312,51 +304,50 @@ padding: 50px 200px;
 }
 
 .a5{
-background-color:  rgba(255, 255, 0, 0.425);
+background-color:  orange;
 margin: 50px;
-border:  blue;
+border:  orange;
 border-radius: 20px;
 text-align: left;
 padding: 50px 200px;
-box-shadow: 5px 10px blue;
+box-shadow: 5px 10px saddlebrown;
 }
 .b5{
-    background-color: rgba(36, 36, 243, 0.575);
+    background-color: antiquewhite;
     margin: 50px;
-    border: yellow;
+    border: antiquewhite;
     border-radius: 20px;
     text-align: left;
     padding: 50px 200px;
-    box-shadow: 5px 10px  yellow;
+    box-shadow: 5px 10px  orange;
     }
 .c5{
-        background-color: antiquewhite;
+        background-color: orange;
         margin: 50px;
-        border:  orangered;
+        border:  saddlebrown;
         border-radius: 20px;
         text-align: left;
         padding: 50px 200px;
-        box-shadow: 5px 10px orangered;
+        box-shadow: 5px 10px saddlebrown;
     }
 .c6{
-            background-color: rgba(255, 68, 0, 0.973);
+            background-color: antiquewhite;
             margin: 50px;
-            border:  blue;
+            border:  orange;
             border-radius: 20px;
             text-align: left;
             padding: 50px 200px;
-            box-shadow: 5px 10px  blue;
+            box-shadow: 5px 10px  orange;
     }
  p big{
-           color: blue; 
+           color:orange; 
            font-weight: 700;
         }
 footer{
-    background-color: rgba(248, 248, 21, 0.514);
-    border: 2px solid orangered;
+    background-color: orange;
+    border: 2px solid saddlebrown;
     border-radius: 20px;
     margin-top: 10px;
-    color: orangered;
 
     
 }
@@ -367,7 +358,7 @@ footer{
 }
 
 .newsletter-block{
-    background-color: rgba(0, 0, 255, 0.836);
+    background-color: orange;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -377,30 +368,30 @@ footer{
     text-align: center;
    /* box-shadow: 5px 10px orangered;  */
    margin-bottom: 10px;
-    
-    
-    
-    
+   
+    }
+    .text-white{
+    color: orange;
 }
-
 .col-sm-7{
     text-align: center;
     position: relative;
     left: 20%;
-    color: orangered;
+    color: antiquewhite;
     
    
 }
 .list-unstyled{
-    color: orangered;
+    color: antiquewhite;
 }
+
 .text-white {
-    color: orangered;
+    color: orange;
 }
 
 
  p a{
-    color: rgba(255, 68, 0, 0.911);
+    color: orange;
     text-decoration: none;
     font-size: 15px;
 }
@@ -411,43 +402,31 @@ p a:hover {
     color: antiquewhite;
     text-decoration: none;
 } 
-#button1{
-    color:antiquewhite;
-}
- #button3{
-    color: orangered;
-} 
+
+
 #button2{
-    color: blue;
+    color: antiquewhite;
 }
 .section3 a{
     text-decoration: none;
     color: antiquewhite
 }
-#but2{
-    color:blue ;
-}
-#but3{
-    color: orangered;
-}
+ 
 .section4 a{
     text-decoration: none;
-    color: orangered;
-}
-#ton1{
     color: antiquewhite;
 }
+
 
 .faq-carousel {
     width: 100%;
     max-width: 600px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(255, 68, 0, 0.568);
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    box-shadow: 5px 10px orangered;
+    box-shadow: 10px 5px 10px orange;
 }
 
 /* Styling for each slide */

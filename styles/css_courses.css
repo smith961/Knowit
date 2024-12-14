@@ -6,7 +6,7 @@
   font-family: Arial, sans-serif;
 }
 header{
-  background-color: rgba(255, 68, 0, 0.849);
+  background-color: orange;
  }
  
  .logo1{
@@ -36,7 +36,7 @@ header{
    margin: 10px 10px;
    background-color: rgba(255, 166, 0, 0);
    font-size: 15px;
-   border: 2px rgba(255, 68, 0, 0.788);
+   border: 2px orange;
  } 
  .div1{
   margin-left: 50%;
@@ -58,7 +58,7 @@ header{
 /* Sidebar */
 .sidebar {
   width: 25%;
-  background-color: orangered;
+  background-color: orange;
   color: antiquewhite;
   padding: 20px;
 }
@@ -87,7 +87,7 @@ header{
 #moduleList a:hover {
   background-color: antiquewhite;
   border-radius: 10px;
- color: orangered; 
+ color: orange; 
  transition: 3s ease-in-out;
 }
 
@@ -128,7 +128,7 @@ textarea {
   height: 120px;
   padding: 10px;
   font-size: 14px;
-  border: 1px solid orangered;
+  border: 1px solid orange;
   border-radius: 4px;
   resize: vertical;
   background-color: #f9f9f9;
@@ -145,14 +145,14 @@ button {
 }
 
 button#runBtn {
-  background-color: orangered;
+  background-color: orange;
   color: antiquewhite;
   margin-top: 10px;
   transition: background-color 0.3s;
 }
 
 button#runBtn:hover {
-  background-color: orangered;
+  background-color: orange;
 }
 
 .navigation-buttons {
@@ -162,23 +162,23 @@ button#runBtn:hover {
 }
 
 .nav-btn {
-  background-color: orangered;
+  background-color: oranger;
   color: antiquewhite;
 }
 
 .nav-btn:disabled {
-  background-color: orangered;
+  background-color: orange;
 }
 
 .nav-btn:hover:not(:disabled) {
-  background-color: orangered;
+  background-color: orange;
 }
 
 /* Output */
 #output {
   background-color: rgba(250, 235, 215, 0.212);
   padding: 10px;
-  border: 1px solid orangered;
+  border: 1px solid orange;
   border-radius: 4px;
   margin-top: 10px;
   min-height: 100px;
@@ -188,7 +188,7 @@ button#runBtn:hover {
   padding: 20px;
   text-align: center;
   background-color: #ffffff;
-  border: 1px solid orangered;
+  border: 1px solid orange;
 }
 
 .testText {
