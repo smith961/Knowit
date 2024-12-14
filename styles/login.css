@@ -14,7 +14,7 @@ body {
  height: 450px; 
  background: antiquewhite;
  border-radius: 10px;
- box-shadow: 0 4px 6px orangered;
+ box-shadow: 0 4px 6px orange;
  overflow: hidden;
  display: flex;
  justify-content: center;
@@ -63,12 +63,12 @@ h1 {
  width: 100%; 
  padding: 10px;
  margin-bottom: 15px;
- border: 1px solid orangered;
+ border: 1px solid orange;
  border-radius: 5px;
 }
 
 .button5 {
- background-color: orangered;
+ background-color: orange;
  color: antiquewhite;
  border: none;
  padding: 10px 20px;
@@ -80,11 +80,11 @@ h1 {
 }
 
 .button5:hover {
- background-color: rgba(255, 68, 0, 0.397);
+ background-color: antiquewhite;
 }
 
 .a {
- color: orangered;
+ color: orange;
  text-decoration: none;
 }
 
@@ -96,7 +96,7 @@ h1 {
  position: fixed;
  top: 10px;
  right: 10px;
- background: orangered;
+ background: orange;
  color: antiquewhite;
  padding: 10px 20px;
  border-radius: 5px;

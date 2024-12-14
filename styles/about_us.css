@@ -11,7 +11,7 @@
 
 /* Header Styles */
 header {
-  background-color: orangered;
+  background-color: orange;
   color: black;
   padding: 15px 20px;
   display: flex;
@@ -61,7 +61,7 @@ nav a:hover {
 
 .about-us-title {
   font-size: 50px;
-  color: orangered;
+  color: orange;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -75,7 +75,7 @@ nav a:hover {
 }
 
 .about-us-highlight {
-  color: orangered;
+  color: orange;
   font-weight: bold;
 }
 
@@ -96,7 +96,7 @@ hr {
 
 /* Footer Styles */
 footer {
-  background-color: orangered;
+  background-color: orange;
   color: white;
   padding: 15px 20px;
   text-align: center;
