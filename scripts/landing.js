@@ -1,3 +1,27 @@
+// Define course mappings
+const courses = {
+    "html": "../pages/html_course.html",
+    "css": "../pages/css_course.html",
+    "javascript": "../pages/javascript_course.html",
+};
+
+// Add event listener for the search form
+document.querySelector('form[role="search"]').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Get the user's search query
+    const query = document.getElementById("input").value.trim().toLowerCase();
+
+    // Check if the query matches any course
+    if (courses[query]) {
+        // Redirect to the corresponding course page
+        window.location.href = courses[query];
+    } else {
+        // Display a message if the course is not found
+        alert("Course not found. Please try again!");
+    }
+});
+
 let currentIndex = 0;
 const images = ['../assets/landing/developer.png', '../assets/landing/landingpage2.png'];  // Array of image sources
 const imgElement = document.getElementById('slideshow');

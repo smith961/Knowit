@@ -80,87 +80,38 @@ transition: 3s ease-in-out;
     z-index: 1000;
 }
 
-.section1{
+/* Section One Styling */
+.section1 {
     text-align: center;
     background-color: antiquewhite;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 60px 20px; /* Reduced padding for smaller screens */
     border-radius: 10px;
     border: 2px outset orange;
     margin-top: 60px;
-    font-family: Verdana, san-serif;
-    }
+    font-family: Verdana, sans-serif;
+}
 
-    #button1{
-        color: saddlebrown;
-    }
-.section1 h1{
-    color:orange;
-    font-size: 60px;
-    text-align: left;
-    padding-left: 80px;
+.section1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section1 h1 {
+    color: orange;
+    font-size: 48px;
+    text-align: center; 
+    padding: 20px 0; 
     font-family: Georgia, serif;
 }
-.section1 h2{
+
+.section1 h2 {
     padding-top: 10px;
     font-weight: 200;
-    font-size: 48px;
+    font-size: 36px; 
     color: saddlebrown;
     text-align: center;
-    padding-left: 150px;
+    padding: 0 20px; 
 }
-
-    .section2{
-    text-align: center;
-    background-color: orange;
-    padding-top: 100px;
-padding-bottom: 100px;
-border-radius: 10px;
-border: 2px inset antiquewhite;
-}
-.section2 h1{
-    color:antiquewhite;
-    font-size: 200px;
-}
-.section2 p{
-    color:antiquewhite;
-    font-size: 50px;
-    font-weight: 300;
-}
-
-.button1{
-    background-color: antiquewhite;
-    border-radius: 30px ;
-    border: 10px solid antiquewhite;
-    font-size: 20px;
-    height: 50px;
-    width: 270px;
-    margin-top: 27px;
-    box-shadow: 5px 10px saddlebrown;
-    margin-bottom: 10px;
-}
-.button2{
-    background-color: orange;
-    border: 10px solid antiquewhite;
-    border-radius: 30px;
-    font-size: 20px;
-    height: 60px;
-    width: 270px;
-    margin: 25px;
-}
-.button3{
-background-color:antiquewhite;
-    border-radius: 30px;
-    font-size: 20px;
-    height: 50px;
-    width: 270px;
-    box-shadow: 5px 10px saddlebrown;
-    border: saddlebrown;
-}
-#button3{
-    color: saddlebrown;
-}
-
 #slideshow {
     width: auto;  /* Ensure the image fits */
     transition: opacity 0.5s ease;  /* Smooth fade transition */
@@ -168,229 +119,451 @@ background-color:antiquewhite;
      float: right; 
     display: block;
   }
+/* Responsive Design */
+@media (min-width: 768px) {
+    .section1 {
+        padding: 80px 40px; 
+    }
 
- 
-.section3{
+    .section1 h1 {
+        font-size: 60px; 
+        text-align: left;
+        padding-left: 80px;
+    }
+
+    .section1 h2 {
+        font-size: 48px; 
+        text-align: center;
+        padding-left: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section1 {
+        padding: 100px 80px; 
+    }
+}
+/* Section Two Styling */
+
+.section2 {
     text-align: center;
-    background-color:antiquewhite;
-    padding-top: 100px;
-padding-bottom: 100px;
-border-radius: 10px;
-border: 2px solid saddlebrown;
-/* display: flex; */
-}
-.section3 h1{
-    color:orange;
-    font-size: 200px;
-}
-.section3 p{
-    color:orange;
-    font-size: 50px;
-    font-weight: 300;
-}
-
-.but1{
     background-color: orange;
-    border: 10px solid saddlebrown;
-    border-radius: 30px;
-    font-size: 20px;
-    height: 60px;
-    width: 270px;
-    margin-top: 27px;
+    padding: 50px 20px; 
+    border-radius: 10px;
+    border: 2px inset antiquewhite;
+}
+
+.section2 h1 {
+    color: antiquewhite;
+    font-size: 100px; 
+    margin-bottom: 20px;
+}
+
+.section2 p {
+    color: antiquewhite;
+    font-size: 35px; 
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.button1{
+    background-color: antiquewhite;
+    border-radius: 30px ;
+    border: saddlebrown;
+  font-size: 16px; 
+    height: 40px; 
+    width: 240px; 
+    margin: 25px auto; 
+    display: block; 
+    text-align: center;
+    box-shadow: 5px 10px saddlebrown;
+    }
+    .button2{
+        background-color: orange;
+        border-radius: 30px ;
+        border:antiquewhite;
+        box-shadow: 5px 10px antiquewhite;
+      font-size: 16px; 
+        height: 45px; 
+        width: 240px; 
+        margin: 25px auto; 
+        display: block; 
+        text-align: center;
+        }
+        .button3{
+            background-color: antiquewhite;
+            border-radius: 30px ;
+            border: saddlebrown;
+          font-size: 16px; 
+            height: 45px; 
+            width: 240px; 
+            margin: 25px auto; 
+            display: block; 
+            text-align: center;
+            box-shadow: 5px 10px saddlebrown;
+            }
+            #button1{
+                color: saddlebrown;
+            }
+            #button2{
+                color: antiquewhite;
+            }
+            #button3{
+                color: saddlebrown;
+            }
+        
+    
+/* Responsive Design */
+@media (min-width: 768px) {
+    .section2 {
+        padding: 70px 40px;
     }
 
-    #but1{
-        color: saddlebrown;
+    .section2 h1 {
+        font-size: 150px; 
     }
+
+    .section2 p {
+        font-size: 45px; 
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 20px;
+        height: 50px;
+        width: 260px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section2 {
+        padding: 100px 80px;
+    }
+
+    .section2 h1 {
+        font-size: 200px; 
+    }
+
+    .section2 p {
+        font-size: 50px; 
+    }
+
+    .button1, .button2, .button3 {
+        font-size: 20px; 
+        height: 60px;
+        width: 270px;
+    }
+}
+
+/* Section Three Styling */
+.section3 {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 50px 20px;
+    border-radius: 10px;
+    border: 2px solid saddlebrown;
+}
+
+.section3 h1 {
+    color: orange;
+    font-size: 100px; 
+    margin-bottom: 20px;
+}
+
+.section3 p {
+    color: orange;
+    font-size: 35px; 
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.but1 {
+    background-color: orange;
+    border: saddlebrown;
+    border-radius: 30px;
+    font-size: 16px; 
+    height: 45px; 
+    width: 240px;
+    margin: 25px auto; 
+    display: block;
+    text-align: center;
+    box-shadow: 5px 10px saddlebrown;
+}
 .but2{
     background-color: antiquewhite;
-    border: 10px inset orange;
+    border: orange;
     border-radius: 30px;
-    font-size: 20px;
-    height: 60px;
-    width: 270px;
-    margin: 25px;
+    font-size: 16px; 
+    height: 45px; 
+    width: 240px;
+    margin: 25px auto; 
+    display: block;
+    text-align: center;
+    box-shadow: 5px 10px orange;
 }
-#but2{
-color: orange;
-}
-
-.but3{
-background-color:orange;
+.but3 {
     color:antiquewhite;
     border: saddlebrown;
     border-radius: 30px;
-    font-size: 20px;
-    height: 50px;
-    width: 270px;
     box-shadow: 5px 10px saddlebrown;
+    font-size: 16px; 
+    height: 45px; 
+    width: 240px;
+    margin: 25px auto; 
+    display: block;
+    text-align: center;
 }
-#but3{
-color: saddlebrown;
+#but1{
+    color: saddlebrown;
+}
+#but2{
+    color: orange;
+    }
+    #but3{
+        color: saddlebrown;
+        } 
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .section3 {
+        padding: 70px 40px;
+    }
+
+    .section3 h1 {
+        font-size: 200px; /* Increase font size for medium screens */
+    }
+
+    .section3 p {
+        font-size: 40px; /* Adjust font size for medium screens */
+    }
+
+    .but1, .but2, .but3 {
+        font-size: 20px;
+        height: 50px;
+        width: 260px;
+    }
 }
 
-.section4{
+@media (min-width: 1200px) {
+    .section3 {
+        padding: 100px 80px;
+    }
+
+    .section3 h1 {
+        font-size: 200px; /* Restore original font size for large screens */
+    }
+
+    .section3 p {
+        font-size: 50px; /* Restore original font size for large screens */
+    }
+
+    .but1, .but2, .but3 {
+        font-size: 20px; /* Restore original font size for large screens */
+        height: 60px;
+        width: 270px;
+    }
+}
+
+/* Section Four Styling */
+.section4 {
     text-align: center;
-    background-color:orange;
-    padding-top: 100px;
-padding-bottom: 100px;
-border-radius: 10px;
-border: 2px solid antiquewhite;
+    background-color: orange;
+    padding: 50px 20px; 
+    border-radius: 10px;
+    border: 2px solid antiquewhite;
 }
-.section4 h1{
-    color:antiquewhite;
-    font-size: 200px;
+
+.section4 h1 {
+    color: antiquewhite;
+    font-size: 80px; 
+    margin-bottom: 20px;
 }
-.section4 p{
-    color:antiquewhite;
-    font-size: 50px;
+
+.section4 p {
+    color: antiquewhite;
+    font-size: 35px; 
     font-weight: 300;
+    margin-bottom: 30px;
 }
-.ton1{
+
+.ton1 {
     background-color: antiquewhite;
     border:saddlebrown;
     border-radius: 30px;
-    font-size: 20px;
-    height: 50px;
-    width: 270px;
-    margin-top: 27px;
     box-shadow: 5px 10px saddlebrown;
-    }
-
+    font-size: 16px; 
+    height: 45px; 
+    width: 240px; 
+    margin: 25px auto; 
+    display: block;
+    text-align: center;
+}
+ .ton2 {
+    background-color: orange;
+    border: antiquewhite;
+    box-shadow:5px 10px antiquewhite;
+    border-radius: 30px;
+    font-size: 16px; 
+    height: 45px; 
+    width: 240px; 
+    margin: 25px auto; 
+    display: block;
+    text-align: center;
+}
+.ton3 {
+    background-color:antiquewhite;
+    border: saddlebrown;
+    box-shadow:5px 10px saddlebrown;
+    border-radius: 30px;
+    font-size: 16px; 
+    height: 45px; 
+    width: 240px; 
+    margin: 25px auto; 
+    display: block;
+    text-align: center;
+}
 #ton1{
     color: saddlebrown;
 }
-.ton2{
-    background-color: orange;
-    border: 10px solid antiquewhite;
-    border-radius: 30px;
-    font-size: 20px;
-    height: 60px;
-    width: 270px;
-    margin: 25px;
-}
 #ton2{
-color:antiquewhite;
-}
-
-.ton3{
-background-color:antiquewhite;
-    border: 10px inset saddlebrown;
-    border-radius: 30px;
-    font-size: 20px;
-    height: 60px;
-    width: 270px;
-}
-#ton3{
-    color: saddlebrown;
-}
-
-.section5{
-    background-color: antiquewhite;
-    padding: 100px ;
-    text-align: center;
-    font-family: sans-serif;
-    border-radius: 10px;
-border: 2px inset saddlebrown;
-padding: 50px 200px;
-}
-.section5 h2{
-    font-size: 35px;
-    font-weight: 600;
-}
-.section5 p{font-weight: 400;
-    font-size: 18px;
-
-}
-
-.a5{
-background-color:  orange;
-margin: 50px;
-border:  orange;
-border-radius: 20px;
-text-align: left;
-padding: 50px 200px;
-box-shadow: 5px 10px saddlebrown;
-}
-.b5{
-    background-color: antiquewhite;
-    margin: 50px;
-    border: antiquewhite;
-    border-radius: 20px;
-    text-align: left;
-    padding: 50px 200px;
-    box-shadow: 5px 10px  orange;
+    color:antiquewhite;
     }
-.c5{
-        background-color: orange;
-        margin: 50px;
-        border:  saddlebrown;
-        border-radius: 20px;
-        text-align: left;
-        padding: 50px 200px;
-        box-shadow: 5px 10px saddlebrown;
+    #ton3{
+        color: saddlebrown;
+    } 
+/* Responsive Design */
+@media (min-width: 768px) {
+    .section4 {
+        padding: 70px 40px;
     }
-.c6{
+
+    .section4 h1 {
+        font-size: 150px; /* Increased size for medium screens */
+    }
+
+    .section4 p {
+        font-size: 40px; /* Adjusted size for medium screens */
+    }
+
+    .ton1, .ton2, .ton3 {
+        font-size: 18px;
+        height: 50px;
+        width: 260px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section4 {
+        padding: 100px 80px;
+    }
+
+    .section4 h1 {
+        font-size: 200px; /* Restored original size for larger screens */
+    }
+
+    .section4 p {
+        font-size: 50px; /* Restored original size for larger screens */
+    }
+
+    .ton1, .ton2, .ton3 {
+        font-size: 20px; /* Restored original size for larger screens */
+        height: 60px;
+        width: 270px;
+    }
+}
+
+/* Section Five Styling */
+        .section5 {
             background-color: antiquewhite;
-            margin: 50px;
-            border:  orange;
+            padding: 50px 20px; 
+            text-align: center;
+            font-family: sans-serif;
+            border-radius: 10px;
+            border: 2px inset saddlebrown;
+        }
+        
+        .section5 h2 {
+            font-size: 28px; 
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .section5 p {
+            font-weight: 400;
+            font-size: 16px; 
+            margin-bottom: 30px;
+        }
+        
+        .a5, .b5, .c5, .c6 {
+            background-color: orange;
+            margin: 20px auto; 
             border-radius: 20px;
             text-align: left;
-            padding: 50px 200px;
-            box-shadow: 5px 10px  orange;
-    }
- p big{
-           color:orange; 
-           font-weight: 700;
+            padding: 20px; 
+            box-shadow: 5px 10px saddlebrown;
+            color: antiquewhite;
         }
-footer{
-    background-color: orange;
-    border: 2px solid saddlebrown;
-    border-radius: 20px;
-    margin-top: 10px;
-
-    
-}
-
-.newsletter .container{
-    margin-top: 5px;
-    padding: 20px;
-}
-
-.newsletter-block{
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    position: relative;
-    top: 0;
-    left: 15%;
-    text-align: center;
-   /* box-shadow: 5px 10px orangered;  */
-   margin-bottom: 10px;
-   
-    }
-    .text-white{
-    color: orange;
-}
-.col-sm-7{
-    text-align: center;
-    position: relative;
-    left: 20%;
-    color: antiquewhite;
-    
-   
-}
-.list-unstyled{
-    color: antiquewhite;
-}
-
-.text-white {
-    color: orange;
-}
-
-
- p a{
+        
+        .b5, .c6 {
+            background-color: antiquewhite;
+            box-shadow: 5px 10px orange;
+            color: saddlebrown;
+        }
+        
+        .a5 h2, .b5 h2, .c5 h2, .c6 h2 {
+            font-size: 24px; 
+            margin-bottom: 10px;
+        }
+        
+        .a5 p, .b5 p, .c5 p, .c6 p {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .section5 {
+                padding: 50px 40px;
+            }
+        
+            .section5 h2 {
+                font-size: 32px;
+            }
+        
+            .section5 p {
+                font-size: 18px; 
+            }
+        
+            .a5, .b5, .c5, .c6 {
+                padding: 30px 40px; 
+            }
+        
+            .a5 h2, .b5 h2, .c5 h2, .c6 h2 {
+                font-size: 28px; 
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .section5 {
+                padding: 50px 200px; 
+            }
+        
+            .section5 h2 {
+                font-size: 35px; 
+            }
+        
+            .section5 p {
+                font-size: 18px; 
+            }
+        
+            .a5, .b5, .c5, .c6 {
+                padding: 50px 200px; 
+            }
+        
+            .a5 h2, .b5 h2, .c5 h2, .c6 h2 {
+                font-size: 32px; 
+            }
+        }
+     p a{
     color: orange;
     text-decoration: none;
     font-size: 15px;
@@ -403,10 +576,6 @@ p a:hover {
     text-decoration: none;
 } 
 
-
-#button2{
-    color: antiquewhite;
-}
 .section3 a{
     text-decoration: none;
     color: antiquewhite
@@ -473,5 +642,86 @@ p a:hover {
 
     .faq-answer {
         font-size: 15px;
+    }
+}
+
+/* Footer Section Styling */
+footer{
+    background-color: orange;
+    border: 2px solid saddlebrown;
+    border-radius: 20px;
+    margin-top: 10px;   
+}
+
+.newsletter .container{
+    margin-top: 5px;
+    padding: 20px;
+}
+.newsletter-block{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    left: 15%;
+    text-align: center;
+   /* box-shadow: 5px 10px orangered;  */
+   margin-bottom: 10px;
+    
+ }
+    .text-white{
+    color: orange;
+}
+#text-white{
+    color: antiquewhite;
+    text-align: center;
+}
+.col-sm-7{
+    text-align: center;
+    position: relative;
+    left: 20%;
+    color: antiquewhite;
+    
+   
+}
+.list-unstyled{
+    color: antiquewhite;
+}
+
+.text-white {
+    color: orange;
+}
+
+@media (max-width: 768px) {
+    .newsletter .container {
+        padding: 10px;
+    }
+
+    .newsletter-block {
+        flex-direction: column; 
+        left: 0; 
+        margin: 0 auto; 
+        width: 90%; 
+    }
+
+    .col-sm-7 {
+        left: 0; 
+        margin: 10px 0; 
+    }
+
+    footer {
+        margin-top: 20px; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .newsletter-block {
+        width: 80%; 
+        left: 10%; 
+    }
+
+    .col-sm-7 {
+        left: 5%;
     }
 }
