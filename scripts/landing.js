@@ -3,6 +3,10 @@ const courses = {
     "html": "../pages/html_course.html",
     "css": "../pages/css_course.html",
     "javascript": "../pages/javascript_course.html",
+    "html exercise": "../pages/html_exercises.html",
+    "css exercise": "../pages/css_exercise.html",
+    "javascript exercise": "../pages/javascript_exercise.html",
+    "quiz": "../pages/quiz.html",
 };
 
 // Add event listener for the search form
