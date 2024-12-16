@@ -1,3 +1,10 @@
+// Toggle navigation menu
+document.getElementById('hamburger').addEventListener('click', function () {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('show'); // Toggle the 'show' class
+});
+
+
 const modules = [
  {
    title: "CSS Introduction",
