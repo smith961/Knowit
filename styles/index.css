@@ -656,7 +656,8 @@ footer{
   padding: 20px;
 }
 .newsletter-block{
-  background-color: orange;
+  background-color: antiquewhite;
+  
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -672,8 +673,13 @@ footer{
   color: orange;
 }
 #text-white{
-  color: antiquewhite;
+  color: brown;
   text-align: center;
+}
+#btn-news{
+    background-color: brown;
+    color: white;
+    
 }
 .col-sm-7{
   text-align: center;
@@ -684,7 +690,7 @@ footer{
  
 }
 .list-unstyled{
-  color: antiquewhite;
+  color: white;
 }
 
 .list-unstyled a{
